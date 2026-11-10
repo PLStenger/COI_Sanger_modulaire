@@ -1,0 +1,47 @@
+{
+  "sample": "H1",
+  "field_id": "VNM-DI-01",
+  "presumed_taxon": "Bactrocera sp.",
+  "raw_dir": "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/GENOSCREEN-Projet77346-03837-021126",
+  "forward_ab1": "VNM-D1-01-LCO_F11_085.ab1",
+  "reverse_ab1": "VNM-D1-01-HCO_F11_085.ab1",
+  "mapping_confirmed": true,
+  "email": "pierrelouis.stenger@gmail.com",
+  "references_file": "references/H1.tsv",
+  "raw_trim_1based": {
+    "forward": null,
+    "reverse": null
+  },
+  "quality_window": 20,
+  "quality_window_mean": 25,
+  "min_base_q": 20,
+  "min_read_bp": 200,
+  "primer_end_search_bp": 65,
+  "primer_max_mismatches": 2,
+  "primers": [
+    "GGTCAACAAATCATAAAGATATTGG",
+    "TAAACTTCAGGGTGACCAAAAAATCA"
+  ],
+  "min_overlap_bp": 200,
+  "min_pair_identity": 0.97,
+  "max_consensus_n_fraction": 0.02,
+  "consensus_scope": "double_covered",
+  "genetic_code": 5,
+  "min_reference_comparable_bp": 450,
+  "min_reference_coverage": 0.8,
+  "min_alignment_columns": 450,
+  "threads": 4,
+  "seed": 3837,
+  "bootstrap_replicates": 1000,
+  "run_tag": "v01",
+  "metadata": {
+    "project": "03837",
+    "sample_type": "entier",
+    "stage": "Larve",
+    "origin": "VietNam",
+    "collection_date": "2024-09-07",
+    "substrate": "Prunus domestica (exlarva)",
+    "sample_reference": "COL/ins/553-24 (b)",
+    "remarks": "À identifier"
+  }
+}

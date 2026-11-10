@@ -1,0 +1,257 @@
+python scripts/01_qc_ab1.py configs/H1.json
+
+
+# Pour examiner les résultats:
+(base) MacBook-Air:COI_Sanger_modulaire Mac$ cat analyses/H1/01_qc/summary.tsv
+read	file	raw_bp	start_1based	end_1based	trimmed_bp	mean_phred	primers_removed
+forward	VNM-D1-01-LCO_F11_085.ab1	955	20	670	651	51.75	
+reverse	VNM-D1-01-HCO_F11_085.ab1	1001	10	672	663	51.04
+
+open analyses/H1/01_qc/forward_chromatogrammes.pdf
+open analyses/H1/01_qc/reverse_chromatogrammes.pdf
+
+
+
+
+python scripts/02_consensus.py configs/H1.json
+
+On observe ceci:
+{
+  "overlap_columns": 609,
+  "high_quality_paired_sites": 594,
+  "pair_identity": 1.0,
+  "internal_indel_columns": 0,
+  "consensus_bp": 609,
+  "n_count": 0,
+  "n_fraction": 0.0,
+  "score_hco_as_is": 8.0,
+  "score_hco_reverse_complement": 1174.0,
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402"
+}
+
+Il faut comprendre ça:
+| Résultat                       | Interprétation                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| consensus_bp: 609              | Le consensus candidat contient 609 bases.                                                                          |
+| high_quality_paired_sites: 594 | 594 positions sont utilisables avec une qualité suffisante dans les deux lectures.                                 |
+| pair_identity: 1.0             | Les deux lectures concordent à 100% sur ces 594 positions. Ce n’est pas une identité avec une espèce de référence. |
+| n_count: 0                     | Aucune base du consensus n’est laissée sous forme de N.                                                            |
+| internal_indel_columns: 0      | Aucun indel interne n’a été détecté entre les deux lectures.                                                       |
+| Scores HCO : 8 contre 1174     | Le complément inverse de HCO s’aligne nettement mieux à LCO, conformément à l’orientation retenue par le script.   |
+
+
+
+
+#### ENSUITE IL FAUT VERIFIER LE CADRE DE LECTURE POUR VOIR S'IL FAUT DECALER S'IL Y A UNE CODON STOP, AVEC CE SCRIPT:
+python -c '
+import csv
+from pathlib import Path
+
+p = Path("analyses/H1/02_consensus/translation_six_frames.tsv")
+
+with p.open() as f:
+    rows = list(csv.DictReader(f, delimiter="\t"))
+
+print("Brin\tDécalage\tLongueur_AA\tSTOP\tAA_inconnus")
+for r in rows:
+    print(
+        r["strand"],
+        r["offset_0based"],
+        r["aa_length"],
+        r["stop_count"],
+        r["unknown_aa"],
+        sep="\t"
+    )
+'
+
+Ici ça donne:
+Brin	Décalage	Longueur_AA	STOP	AA_inconnus
++	0	203	27	0
++	1	202	4	0
++	2	202	0	0
+-	0	203	12	0
+-	1	202	24	0
+-	2	202	2	0
+
+Le brin +, décalage 2 est donc le seul cadre sans STOP : c’est le candidat à vérifier.
+
+Il faut aller sur NCBI blastN, copier coller 02_consensus/candidate.fasta sur blast.
+Ensuite, on cherche un résultat comme une référence COI
+
+Voici les résultats pour mon test:
+Accession	Référence déposée	Couverture	Identité
+PP493792.1	B. dorsalis, isolate QJ07, mitogénome	100%	100%
+PP485726.1	B. dorsalis, isolate PG02, mitogénome	100%	100%
+OR119480.1	B. dorsalis, voucher UHIM.ms09623, COI	100%	100%
+OR118269.1	B. dorsalis, voucher UHIM.ms10054, COI	100%	100%
+
+Donc on regarde OR119480.1
+On regarde les alignement, et très important, on coche la case "CDS feature"
+
+Ici on voit ce résultat:
+CDS: Putative 1       1       W  A  G  M  V  G  T  S  L  S  I  L  V  R  A  E  L  G  H  
+Query                 1    CCTGAGCAGGAATAGTAGGAACATCCCTTAGAATTTTAGTCCGAGCTGAACTCGGTCACC  60
+                           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct                 24   CCTGAGCAGGAATAGTAGGAACATCCCTTAGAATTTTAGTCCGAGCTGAACTCGGTCACC  83
+CDS:cytochrome oxida  8    A  W  A  G  M  V  G  T  S  L  S  I  L  V  R  A  E  L  G  H  
+
+cet affichage confirme le cadre + / offset 2, en accord avec ton tableau des six cadres
+Elle correspond à ce découpage de la query :
+
+Bases laissées    Premier codon complet
+hors traduction   à partir de la base 3
+      CC        | TGA | GCA | GGA | ATA | GTA | GGA | ACA | ...
+                  W     A     G     M     V     G     T
+
+Les deux premières bases CC appartiennent à un codon incomplet au début du fragment. Le premier codon complet commence donc à la troisième base : c’est exactement offset 2 dans notre script. Le NCBI confirme qu’une première lettre d’acide aminé placée sur la quatrième base représente un codon couvrant les bases 3–5, soit codon_start=3
+
+Donc pour la suite il faut preciser:
+
+python scripts/03_valider_consensus.py configs/H1.json \
+  --strand + --offset 2 --approve \
+  --comment "Chromatogrammes inspectés ; phase COI +2 confirmée par affichage CDS BLAST ; aucun STOP avec la table mitochondriale 5"
+  
+  
+Ensuite, récupérer query.fasta dans 03_blast pour blast ca sur ncbi blast
+Il faut ensuite telecharger "text"
+  
+Tu peux extraire directement la liste des hits de ton rapport BLAST et créer un fichier avec les colonnes dans l’ordre attendu :
+
+Ce bloc lit ton rapport, extrait les accessions sans doublons et écrit un fichier intermédiaire, sans écraser references/H1.tsv :
+
+python - <<'PY'
+import re
+from pathlib import Path
+
+folder = Path("analyses/H1/03_blast")
+source = folder / "H1_BLAST_2026-11-10_F5XCKAV5016_report.txt"
+destination = folder / "H1_references_depuis_BLAST.tsv"
+
+rows = []
+seen = set()
+in_table = False
+
+for line in source.read_text().splitlines():
+    if "Sequences producing significant alignments:" in line:
+        in_table = True
+        continue
+
+    if not in_table:
+        continue
+
+    if line.lstrip().startswith(">"):
+        break
+
+    if re.match(r"^\s*(?:Alignments\b|Score\s*=|Query\s+\d+)", line):
+        break
+
+    match = re.search(r"\b([A-Z]{1,6}_?\d+\.\d+)\s*$", line)
+    if not match:
+        continue
+
+    accession = match.group(1)
+    if accession in seen:
+        continue
+
+    name = re.match(r"^\s*([A-Z][a-z]+)\s+([a-z][a-z-]+)\b", line)
+    species = " ".join(name.groups()) if name else ""
+
+    rows.append("\t".join([
+        accession,
+        species,
+        "reference",
+        "BLAST H1 ; RID F5XCKAV5016 ; nom a verifier"
+    ]))
+    seen.add(accession)
+
+if not rows:
+    raise SystemExit("Aucune accession extraite : verifier le rapport.")
+
+header = "accession\texpected_species\trole\tnotes"
+destination.write_text(header + "\n" + "\n".join(rows) + "\n")
+
+print(f"{len(rows)} references extraites.")
+print(f"Fichier : {destination}")
+PY
+
+Du coup, copier coller les lignes de H1_references_depuis_BLAST.tsv qui vient d'etre créé
+puis Ouvre la liste H1 :
+
+bash
+open -e references/H1.tsv
+Conserve les références déjà présentes, notamment les espèces proches et l’outgroup, et ajoute les quatre références issues de ton BLAST si elles n’y figurent pas déjà 
+
+
+
+
+Ensuite lancer 
+python scripts/04_references_genbank.py configs/H1.json
+
+
+open -e analyses/H1/04_references/audit.tsv
+JX099744.1 Bactrocera carambolae retenue forward 609
+JX099752.1 Bactrocera carambolae retenue forward 609
+NC_008748.1 Bactrocera dorsalis retenue forward 609
+NC_018787.1 Bactrocera correcta retenue forward 609
+NC_014611.1 Bactrocera tryoni retenue forward 609
+NC_005333.1 Bactrocera oleae retenue forward 609
+PP493792.1 Bactrocera dorsalis retenue forward 609
+PP485726.1 Bactrocera dorsalis retenue forward 609
+OR119480.1 Bactrocera dorsalis retenue forward 609
+OR118269.1 Bactrocera dorsalis retenue forward 609
+OR118184.1 Bactrocera dorsalis retenue forward 609
+MW410926.1 Bactrocera dorsalis retenue forward 609
+MG688680.1 Bactrocera dorsalis retenue forward 609
+
+python scripts/05_alignement_distances.py configs/H1.json
+PP493792.1 | Bactrocera dorsalis | 0/609 différences
+PP485726.1 | Bactrocera dorsalis | 0/609 différences
+OR119480.1 | Bactrocera dorsalis | 0/609 différences
+OR118269.1 | Bactrocera dorsalis | 0/609 différences
+OR118184.1 | Bactrocera dorsalis | 0/609 différences
+MW410926.1 | Bactrocera dorsalis | 0/609 différences
+MG688680.1 | Bactrocera dorsalis | 0/609 différences
+NC_008748.1 | Bactrocera dorsalis | 3/609 différences
+JX099744.1 | Bactrocera carambolae | 6/609 différences
+JX099752.1 | Bactrocera carambolae | 6/609 différences
+Distances prêtes. Revoir audit GenBank, gaps, alignement complet et sites communs ; aucun arbre lancé.
+
+
+open analyses/H1/07_plots/distances_common.pdf
+open -e analyses/H1/05_alignment/query_distances.tsv
+open -e analyses/H1/05_alignment/indel_audit.tsv
+open -e analyses/H1/05_alignment/translation_audit.tsv
+
+python scripts/06_phylogenie.py configs/H1.json \
+  --mode explore --approve \
+  --comment "Panel GenBank et vouchers revus ; alignement COI, traduction, indels et sites communs vérifiés"
+
+python scripts/07_tracer_arbre.py configs/H1.json --mode explore
+
+
+
+open analyses/H1/07_plots/H1_explore.pdf
+
+# avec arbre enraciné
+python scripts/07_tracer_arbre.py configs/H1.json \
+  --mode explore --root NC_005333.1
+
+open analyses/H1/07_plots/H1_explore.pdf
+
+# C'et mieux !
+
+
+
+ python scripts/06_phylogenie.py configs/H1.json --mode ufboot
+ python scripts/07_tracer_arbre.py configs/H1.json \
+   --mode ufboot --root NC_005333.1
+ 
+ 
+ open /Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/COI_Sanger_modulaire/analyses/H1/07_plots/H1_ufboot.pdf
+ 
+ 
+ 
+ 
+ python scripts/08_bilan.py configs/H1.json
+ 
+ open -e analyses/H1/BILAN_PROVISOIRE.md

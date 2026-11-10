@@ -1,0 +1,15 @@
+accession	expected_species	role	notes
+JX099744.1	Bactrocera carambolae	reference	Voucher Bd1232 ; barcode COI ; compléter après BLAST
+JX099752.1	Bactrocera carambolae	reference	Voucher Bd1240 ; barcode COI ; indépendance à examiner
+NC_008748.1	Bactrocera dorsalis	reference	Mitogénome ; seule CDS COI sera extraite
+NC_018787.1	Bactrocera correcta	reference	Mitogénome ; seule CDS COI sera extraite
+NC_014611.1	Bactrocera tryoni	reference	Mitogénome ; seule CDS COI sera extraite
+NC_005333.1	Bactrocera oleae	outgroup	Groupe externe au sous-ensemble testé ; reconsidérer selon BLAST
+PP493792.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+PP485726.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+OR119480.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+OR118269.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+OR118184.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+MW410926.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+MG688680.1	Bactrocera dorsalis	reference	BLAST H1 ; RID F5XCKAV5016 ; nom a verifier
+

@@ -1,0 +1,47 @@
+{
+  "sample": "C2",
+  "field_id": "FR-LE-01",
+  "presumed_taxon": "Cydia pomonella",
+  "raw_dir": "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/GENOSCREEN-Projet77346-03837-021126",
+  "forward_ab1": "FR-LE-01-LCO_C11_091.ab1",
+  "reverse_ab1": "FR-LE-01-HCO_C11_091.ab1",
+  "mapping_confirmed": false,
+  "email": "",
+  "references_file": "references/C2.tsv",
+  "raw_trim_1based": {
+    "forward": null,
+    "reverse": null
+  },
+  "quality_window": 20,
+  "quality_window_mean": 25,
+  "min_base_q": 20,
+  "min_read_bp": 200,
+  "primer_end_search_bp": 65,
+  "primer_max_mismatches": 2,
+  "primers": [
+    "GGTCAACAAATCATAAAGATATTGG",
+    "TAAACTTCAGGGTGACCAAAAAATCA"
+  ],
+  "min_overlap_bp": 200,
+  "min_pair_identity": 0.97,
+  "max_consensus_n_fraction": 0.02,
+  "consensus_scope": "double_covered",
+  "genetic_code": 5,
+  "min_reference_comparable_bp": 450,
+  "min_reference_coverage": 0.8,
+  "min_alignment_columns": 450,
+  "threads": 4,
+  "seed": 3837,
+  "bootstrap_replicates": 1000,
+  "run_tag": "v01",
+  "metadata": {
+    "project": "03837",
+    "sample_type": "entier",
+    "stage": "Larve (2)",
+    "origin": "France (Espagne)",
+    "collection_date": "2026-09-16",
+    "substrate": "Cydonia oblonga (Coing)",
+    "sample_reference": "COL/ins/299-26",
+    "remarks": "À identifier"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "sample": "E2",
+  "field_id": "FR-DI-02",
+  "presumed_taxon": "Ceratitis capitata",
+  "raw_dir": "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/GENOSCREEN-Projet77346-03837-021126",
+  "forward_ab1": "FR-D1-02-LCO_E11_087.ab1",
+  "reverse_ab1": "FR-D1-02-HCO_E11_087.ab1",
+  "mapping_confirmed": false,
+  "email": "",
+  "references_file": "references/E2.tsv",
+  "raw_trim_1based": {
+    "forward": null,
+    "reverse": null
+  },
+  "quality_window": 20,
+  "quality_window_mean": 25,
+  "min_base_q": 20,
+  "min_read_bp": 200,
+  "primer_end_search_bp": 65,
+  "primer_max_mismatches": 2,
+  "primers": [
+    "GGTCAACAAATCATAAAGATATTGG",
+    "TAAACTTCAGGGTGACCAAAAAATCA"
+  ],
+  "min_overlap_bp": 200,
+  "min_pair_identity": 0.97,
+  "max_consensus_n_fraction": 0.02,
+  "consensus_scope": "double_covered",
+  "genetic_code": 5,
+  "min_reference_comparable_bp": 450,
+  "min_reference_coverage": 0.8,
+  "min_alignment_columns": 450,
+  "threads": 4,
+  "seed": 3837,
+  "bootstrap_replicates": 1000,
+  "run_tag": "v01",
+  "metadata": {
+    "project": "03837",
+    "sample_type": "entier",
+    "stage": "larve (5)",
+    "origin": "France (Espagne)",
+    "collection_date": "2026-09-16",
+    "substrate": "Mangifera indica (exlarva)",
+    "sample_reference": "COL/ins/301-26",
+    "remarks": "À identifier"
+  }
+}
