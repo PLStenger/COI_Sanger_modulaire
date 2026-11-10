@@ -1,6 +1,6 @@
 # Identification et phylogénie COI d’insectes à partir de séquences Sanger
 
-Tutoriel : des chromatogrammes AB1 au consensus, à BLAST et à un arbre de maximum de vraisemblance. L’exemple documenté est l’échantillon **H1**, présumé *Bactrocera* sp. Les mêmes scripts permettent de traiter A2, B2, C2 et E2 séparément, avec un panel de références propre à chaque échantillon.
+Tutoriel : des chromatogrammes AB1 au consensus, à BLAST et à un arbre de maximum de vraisemblance. L’exemple documenté est l’échantillon **H1**, présumé *Bactrocera* sp. 
 
 Ce dépôt décrit un workflow de travail auditable, pas une méthode diagnostique réglementaire validée. Une identité COI élevée et un arbre soutenu ne suffisent pas toujours à départager les espèces proches.
 
@@ -23,7 +23,7 @@ Ce dépôt décrit un workflow de travail auditable, pas une méthode diagnostiq
 
 ## 1. Résultats de l’exemple H1
 
-Les chiffres de ce tutoriel sont ceux consignés dans [le protocole d’exécution](docs/Protocole.txt) et les sorties terminal documentées. Ils ne sont pas des données simulées. Le [guide initial](docs/Guide_COI_H1.docx) décrit le pipeline ; le présent tutoriel ajoute les étapes de dépannage et de vérification nécessaires pendant l’analyse.
+Le [guide initial](docs/Guide_COI_H1.docx) décrit le pipeline ; le présent tutoriel ajoute les étapes de dépannage et de vérification nécessaires pendant l’analyse.
 
 | Point de contrôle | Résultat H1 |
 |---|---|
@@ -38,13 +38,7 @@ Les chiffres de ce tutoriel sont ceux consignés dans [le protocole d’exécuti
 | Distances affichées à l’étape 05 | Sept références *B. dorsalis* à 0/609 ; NC_008748.1 à 3/609 ; deux *B. carambolae* à 6/609 |
 | Arbres documentés par les commandes | ML exploratoire, puis UFBoot + SH-aLRT, affichage enraciné sur NC_005333.1 |
 
-Les 13 références donnent 14 séquences avec la query si toutes sont aussi conservées après l’étape 05 : vérifier ce nombre dans `manifest.json` et le rapport IQ-TREE. Le protocole ne fournit pas les valeurs finales des supports, le modèle retenu ni une description complète de la topologie. Ces informations doivent être lues dans les résultats déposés, pas déduites des seules commandes.
-
-## 2. Organisation du dépôt et fichiers à déposer
-
-Nom proposé pour le dépôt et le dossier de travail : `COI_Sanger_modulaire`.
-
-Placer ce `README.md` à sa racine. Conserver les noms et sous-dossiers ci-dessous : les liens sont relatifs à cette racine. Les fichiers de résultats ne sont pas incorporés au README ; ils doivent être ajoutés au dépôt pour que les liens fonctionnent.
+## 2. Organisation du dépôt
 
 ```text
 COI_Sanger_modulaire/
@@ -61,14 +55,14 @@ COI_Sanger_modulaire/
 │   ├── 07_tracer_arbre.py
 │   └── 08_bilan.py
 ├── configs/
-│   └── H1.json                     # et A2.json, B2.json, C2.json, E2.json
+│   └── H1.json                     
 ├── references/
 │   └── H1.tsv                      # panel final, pas seulement les hits BLAST
 ├── docs/
-│   ├── Protocole.txt                # protocole original fourni
+│   ├── Protocole.txt                # protocole réalisé pour ce tuto 
 │   └── Guide_COI_H1.docx            # guide original fourni
 ├── data/
-│   └── raw/H1/                     # AB1 si leur diffusion est autorisée
+│   └── raw/H1/                     # AB1 files
 ├── environment/
 │   ├── versions.txt
 │   ├── environnement_conda.yml
@@ -87,23 +81,6 @@ COI_Sanger_modulaire/
         ├── alignment_approved.json
         └── BILAN_PROVISOIRE.md
 ```
-
-### Où mettre les figures, tableaux et autres résultats ?
-
-Le plus simple est de copier tout le dossier `analyses/H1/` issu de l’exécution, sans le réorganiser.
-
-| Dossier | Fichiers à conserver | Usage |
-|---|---|---|
-| `01_qc/` | `summary.tsv`, `provenance.json`, `forward.fastq`, `reverse.fastq`, les FASTA, les deux PDF de chromatogrammes, les deux tables de positions | Contrôle qualité et retour aux bases brutes |
-| `02_consensus/` | `candidate.fasta`, `summary.json`, `base_audit.tsv`, `translation_six_frames.tsv`, `pair_alignment.txt`, `reads_oriented.fastq`, `automatic_pass.json` | Construction et audit du candidat |
-| `03_blast/` | `query.fasta`, rapport texte, Hit table, note d’archivage, TSV extrait ; GenBank manuel facultatif | Identification exploratoire et traçabilité |
-| `04_references/` | Tous les `.gb`, `audit.tsv`, `metadata.json`, `oriented_COI.fasta`, `provenance.json` | Séquences et annotations réellement utilisées |
-| `05_alignment/` | Tous les FASTA, `query_distances.tsv`, matrices CSV, `coverage.tsv`, `column_map.tsv`, `indel_audit.tsv`, `translation_audit.tsv`, `manifest.json` | Matrice analysée et distances |
-| `06_trees/` | Tous les résultats IQ-TREE et `latest_*.json`, notamment `.treefile`, `.iqtree`, `.log`, `.contree` et checkpoints existants | Arbres, modèle, supports et reprise |
-| `07_plots/` | `distances_common.png/.pdf`, `H1_explore.png/.pdf/.svg`, `H1_ufboot.png/.pdf/.svg`, fichiers d’affichage JSON | Figures affichées ou liées dans ce README |
-| `logs/` | Journaux MAFFT et IQ-TREE créés par les scripts | Dépannage et commandes |
-
-Ne pas renommer les fichiers à préfixe automatique d’IQ-TREE : leurs noms contiennent une empreinte d’analyse. Si une figure manque, la produire avec le script 07, pas en créant une image de remplacement.
 
 ## 3. Installer et vérifier les outils
 
@@ -190,12 +167,6 @@ Pour l’exemple H1 :
 | `mapping_confirmed` | `true` uniquement après vérification de la correspondance |
 | `email` | Adresse de contact locale pour NCBI |
 | `references_file` | `references/H1.tsv` |
-
-Attention : `VNM-DI-01` (lettre I) et `VNM-D1-01` (chiffre 1) diffèrent. Vérifier le bordereau du prestataire ; ne pas renommer les bruts pour masquer un doute. Le même point concerne E2, `FR-DI-02` / `FR-D1-02`.
-
-Pour un dépôt partagé, les AB1 peuvent être rangés dans `data/raw/H1/`. Dans ce cas, régler `raw_dir` sur `data/raw/H1` et exécuter depuis la racine. Une modification de configuration après validation invalide les empreintes du pipeline : voir la section reproductibilité avant de déplacer les données d’une analyse terminée.
-
-Utiliser les booléens JSON `true`/`false`, sans guillemets ; conserver `null` pour l’absence de bornes manuelles. Confirmer les amorces LCO/HCO réellement employées. Ne pas modifier les paramètres pour retrouver une espèce attendue.
 
 ### Paramètres de travail initiaux
 
@@ -373,10 +344,7 @@ Ne pas confondre ces deux RID. L’en-tête `BLASTN` seul ne prouve pas quelle t
 
 ### 8.2. Quels téléchargements ?
 
-- « Hit table (txt) » : tableau des hits et statistiques.
 - « Text » : rapport avec en-tête, tableau et alignements détaillés.
-- « GenBank (complete sequence) » : fiches des références sélectionnées, pas le rapport de la recherche ; facultatif ici car 04 téléchargera ses propres fiches.
-- XML/JSON : archivage structuré facultatif.
 
 Exemple exécuté pour le rapport texte :
 
@@ -670,28 +638,6 @@ PY
 
 Si Conda continue à afficher des erreurs, inspecter les exports avant de les publier. Le fichier explicite correspond à une plateforme ; il ne garantit pas une réinstallation sur une architecture différente.
 
-### Publication des résultats et paramètres privés
-
-- Publier uniquement les données dont la diffusion est autorisée : bruts, localités précises, références d’interception et métadonnées peuvent nécessiter une vérification préalable.
-- Les configurations contiennent une adresse email et des chemins locaux. Préparer une configuration publique sans information personnelle ; conserver la configuration historique originale dans l’archive de travail autorisée.
-- Ne pas réécrire les validations pour les faire correspondre à une configuration anonymisée. Expliquer qu’une configuration publique adaptée aux nouveaux chemins doit être réexécutée avec les étapes de validation.
-- Les JSON de provenance et les `.iqtree` peuvent aussi contenir des chemins : les examiner avant publication. Si une version publique est expurgée, la distinguer clairement de l’original.
-- Les `latest_*.json` peuvent contenir un chemin absolu vers l’arbre de la machine d’origine. Le README fonctionne avec des liens relatifs ; retracer après clonage peut nécessiter une nouvelle exécution de 06 avec la configuration locale, pas seulement la copie de ce manifeste.
-- Conserver les accessions avec version, les fiches GenBank téléchargées, le panel final et le rapport BLAST. Les bases évoluent ; un RID n’est pas un substitut durable aux exports.
-- Choisir une licence appropriée pour le code et préciser séparément les conditions de réutilisation des données ; aucune licence n’est présumée dans ce tutoriel.
-
-### Vérification avant mise en ligne
-
-- [ ] `README.md` est à la racine du dépôt.
-- [ ] Les neuf fichiers Python (01–08 et `common.py`) et l’installateur sont présents.
-- [ ] `references/H1.tsv` est le panel effectivement utilisé et ne contient pas de doublon d’accession.
-- [ ] Les résultats réels sont dans `analyses/H1/`, sans renommer les sous-dossiers.
-- [ ] Les trois PNG cités par le README sont présents : distances, exploratoire, UFBoot.
-- [ ] Les PDF correspondants, les matrices, l’alignement ML et les résultats IQ-TREE sont conservés.
-- [ ] Les liens du rapport BLAST, de la Hit table et de la note correspondent aux noms déposés.
-- [ ] Les supports et le modèle ne sont décrits que d’après les fichiers réels.
-- [ ] Les données privées et permissions ont été vérifiées.
-- [ ] Une nouvelle exécution dans une configuration locale est distinguée de l’analyse historique archivée.
 
 ### Documentation méthodologique
 
