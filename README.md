@@ -494,8 +494,6 @@ Le protocole affiche les dix premières références classées ; les distances �
 
 ### Figure des distances
 
-La figure ci-dessous sera affichée une fois le PNG réel déposé à ce chemin :
-
 ![Distances COI entre H1 et les références sur les sites communs](analyses/H1/07_plots/distances_common.png)
 
 [Version PDF](analyses/H1/07_plots/distances_common.pdf)
