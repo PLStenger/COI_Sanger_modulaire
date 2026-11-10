@@ -1,0 +1,5 @@
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch
+Coller query.fasta. Première recherche sans restriction taxonomique.
+Choisir megablast pour proches ; blastn si aucun hit convaincant.
+Exporter les résultats, noter date/base/paramètres/RID.
+Comparer identité, couverture, gaps, ex aequo et vouchers, pas seulement le premier hit.

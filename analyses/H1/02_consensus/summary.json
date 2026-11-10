@@ -1,0 +1,12 @@
+{
+  "overlap_columns": 609,
+  "high_quality_paired_sites": 594,
+  "pair_identity": 1.0,
+  "internal_indel_columns": 0,
+  "consensus_bp": 609,
+  "n_count": 0,
+  "n_fraction": 0.0,
+  "score_hco_as_is": 8.0,
+  "score_hco_reverse_complement": 1174.0,
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402"
+}

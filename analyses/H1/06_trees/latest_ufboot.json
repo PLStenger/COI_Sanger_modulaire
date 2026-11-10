@@ -1,0 +1,30 @@
+{
+  "treefile": "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/COI_Sanger_modulaire/analyses/H1/06_trees/H1_ufboot_v01_1ce17b930890.treefile",
+  "mode": "ufboot",
+  "prefix": "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/COI_Sanger_modulaire/analyses/H1/06_trees/H1_ufboot_v01_1ce17b930890",
+  "alignment_fingerprint": "bc6bcaa03887e53a5cdb414b06858967be6348c757d0334f099b09a04abb6ae9",
+  "n_replicates": 1000,
+  "version": "IQ-TREE version 3.1.4 for MacOS Intel 64-bit built Sep 29 2026\nDeveloped by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren\nContributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,\nOlga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt\n\n",
+  "command": [
+    "/Users/Mac/miniconda3/envs/coi_sanger/bin/iqtree3",
+    "-s",
+    "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/COI_Sanger_modulaire/analyses/H1/05_alignment/analysis_common_sites.fasta",
+    "-st",
+    "DNA",
+    "-m",
+    "MFP",
+    "-T",
+    "4",
+    "-seed",
+    "3837",
+    "-B",
+    "1000",
+    "-bnni",
+    "-alrt",
+    "1000",
+    "-pre",
+    "/Users/Mac/Documents/Projets/51_insectes_interseptes_frontieres/Projet_03837/COI_Sanger_modulaire/analyses/H1/06_trees/H1_ufboot_v01_1ce17b930890"
+  ],
+  "alignment_sha256": "d35e1f014019f8b886f523b3fdcd3e3eec979b0ffd656173b54844cf3bd09f4c",
+  "tree_sha256": "8a0ba8120e85e967adca899dd391b5d96f99eae2a15578c5248b1075ad9031cc"
+}

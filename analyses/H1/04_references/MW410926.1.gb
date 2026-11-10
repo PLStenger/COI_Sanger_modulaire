@@ -1,0 +1,62 @@
+LOCUS       MW410926                 682 bp    DNA     linear   INV 02-JAN-2021
+DEFINITION  Bactrocera dorsalis isolate BD cytochrome c oxidase subunit I
+            (COX1) gene, partial cds; mitochondrial.
+ACCESSION   MW410926
+VERSION     MW410926.1
+KEYWORDS    .
+SOURCE      mitochondrion Bactrocera dorsalis (oriental fruit fly)
+  ORGANISM  Bactrocera dorsalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea;
+            Allotriocarida; Hexapoda; Insecta; Pterygota; Neoptera; Eumetabola;
+            Endopterygota; Aparaglossata; Panorpida; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+REFERENCE   1  (bases 1 to 682)
+  AUTHORS   Wang,X.
+  TITLE     A Rapid LAMP-based colorimetric assay for field surveillance of
+            Drosophila suzukii Matsumura (Diptera: Drosophilidae)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 682)
+  AUTHORS   Wang,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-DEC-2020) College of Plant Protection, China
+            Agricultural University, YUANMINGYUANXILU NO2, Beijing, Beijing
+            100193, China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..682
+                     /organism="Bactrocera dorsalis"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolate="BD"
+                     /db_xref="taxon:27457"
+                     /dev_stage="larvae"
+     gene            <1..>682
+                     /gene="COX1"
+     CDS             <1..>682
+                     /gene="COX1"
+                     /codon_start=1
+                     /transl_table=5
+                     /product="cytochrome c oxidase subunit I"
+                     /protein_id="QQG31214.1"
+                     /translation="KDIGTLYFIFGAWAGMVGTSLSILVRAELGHPGALIGDDQIYNV
+                     IVTAHAFVMIFFMVMPIMIGGFGNWLVPLMLGAPDMAFPRMNNMSFWLLPPSLTLLLV
+                     SSMVENGAGTGWTVYPPLSSVIAHGGASVDLAIFSLHLAGISSILGAVNFITTVINMR
+                     STGITFDRMPLFVWAVVLTALLLLLSLPVLAGAITMLLTDRNLNTSFFDPAGGGDPIL
+                     YQHLFWFFG"
+ORIGIN      
+        1 aaagatattg gaactttata ttttatcttc ggagcctgag caggaatagt aggaacatcc
+       61 cttagaattt tagtccgagc tgaactcggt cacccaggag ctttaatcgg tgacgatcaa
+      121 atttataatg taattgtaac agctcatgct ttcgtaataa ttttctttat agttatacca
+      181 attataattg gtggatttgg aaattgactt gttcctttaa tattaggagc tcccgatata
+      241 gcatttccac gaatgaataa tataagattt tgattattac ctccttccct tacattacta
+      301 ttagtaagaa gtatagtaga aaacggagct ggtacaggtt gaacagttta cccaccccta
+      361 tcatctgtta ttgcacacgg aggagcttca gttgacctag ctattttttc acttcactta
+      421 gcgggtattt cctcaatttt aggagcagta aatttcatta caacagtaat taatatacga
+      481 tcgacaggaa tcacctttga tcgaatacct ctattcgttt gagcagttgt attaacagct
+      541 ttattacttt tattatcatt accagtttta gcaggggcta ttactatatt actaacagac
+      601 cgaaacttaa atacttcctt ttttgaccct gccggaggag gagatcctat tctttaccaa
+      661 catttatttt gattttttgg tc
+//
+

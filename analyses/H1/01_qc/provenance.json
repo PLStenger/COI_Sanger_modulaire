@@ -1,0 +1,14 @@
+{
+  "python_version": "3.11.18 (main, Oct 26 2026, 12:06:28) [Clang 21.1.8 ]",
+  "biopython_version": "1.85",
+  "platform": "macOS-27.0.1-x86_64-i386-64bit",
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402",
+  "raw_sha256": {
+    "forward": "4494a701f7f41ff7fab3d047ba1a51fe5ac1e00eb82eb466daa31b50ae4ec92c",
+    "reverse": "923042eb003c7cf2598bcff8d27a56d86f4c7b1d4e8b4f25a50546eb51be7f66"
+  },
+  "outputs": {
+    "forward": "813cae30bff11e12d6536d83daaf85c7134f535b7bda7bc2e9adae6ad4719ec6",
+    "reverse": "c3bd61740dd9456f5608f6cac45befdc1116b3497644efea90bba1d9175a90e8"
+  }
+}

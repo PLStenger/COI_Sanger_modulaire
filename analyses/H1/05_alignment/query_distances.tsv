@@ -1,0 +1,27 @@
+dataset	id	accession	species	role	comparable_bp	differences	p_distance	K2P
+common_sites	REF_PP493792.1	PP493792.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_PP485726.1	PP485726.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_OR119480.1	OR119480.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_OR118269.1	OR118269.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_OR118184.1	OR118184.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_MW410926.1	MW410926.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_MG688680.1	MG688680.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+common_sites	REF_NC_008748.1	NC_008748.1	Bactrocera dorsalis	reference	609	3	0.0049261083743842365	0.004950535491355785
+common_sites	REF_JX099744.1	JX099744.1	Bactrocera carambolae	reference	609	6	0.009852216748768473	0.009936126042232322
+common_sites	REF_JX099752.1	JX099752.1	Bactrocera carambolae	reference	609	6	0.009852216748768473	0.009936126042232322
+common_sites	REF_NC_014611.1	NC_014611.1	Bactrocera tryoni	reference	609	50	0.08210180623973727	0.08770400285958599
+common_sites	REF_NC_018787.1	NC_018787.1	Bactrocera correcta	reference	609	54	0.08866995073891626	0.09519033002079352
+common_sites	REF_NC_005333.1	NC_005333.1	Bactrocera oleae	outgroup	609	96	0.15763546798029557	0.17977521131946322
+pairwise_query_region	REF_PP493792.1	PP493792.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_PP485726.1	PP485726.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_OR119480.1	OR119480.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_OR118269.1	OR118269.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_OR118184.1	OR118184.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_MW410926.1	MW410926.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_MG688680.1	MG688680.1	Bactrocera dorsalis	reference	609	0	0.0	-0.0
+pairwise_query_region	REF_NC_008748.1	NC_008748.1	Bactrocera dorsalis	reference	609	3	0.0049261083743842365	0.004950535491355785
+pairwise_query_region	REF_JX099744.1	JX099744.1	Bactrocera carambolae	reference	609	6	0.009852216748768473	0.009936126042232322
+pairwise_query_region	REF_JX099752.1	JX099752.1	Bactrocera carambolae	reference	609	6	0.009852216748768473	0.009936126042232322
+pairwise_query_region	REF_NC_014611.1	NC_014611.1	Bactrocera tryoni	reference	609	50	0.08210180623973727	0.08770400285958599
+pairwise_query_region	REF_NC_018787.1	NC_018787.1	Bactrocera correcta	reference	609	54	0.08866995073891626	0.09519033002079352
+pairwise_query_region	REF_NC_005333.1	NC_005333.1	Bactrocera oleae	outgroup	609	96	0.15763546798029557	0.17977521131946322

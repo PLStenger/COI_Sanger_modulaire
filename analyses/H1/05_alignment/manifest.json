@@ -1,0 +1,11 @@
+{
+  "fingerprint": "bc6bcaa03887e53a5cdb414b06858967be6348c757d0334f099b09a04abb6ae9",
+  "alignment_sha256": "d35e1f014019f8b886f523b3fdcd3e3eec979b0ffd656173b54844cf3bd09f4c",
+  "metadata_sha256": "2a580f34751bf802a3fc22c1d0ba1fe033ff655759fa0dff74c96e48903b5a21",
+  "query_sha256": "ba6bdccea217ca44bb702b3fa8419cd3d385e8bd0cffe6d7cb73cc1c15a1436e",
+  "panel_sha256": "34bfcd01d46d1fdd619ff58e5e4b751176ee6a2d7a4c9e96ed2bfd62068e419d",
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402",
+  "n_sequences": 14,
+  "query_columns": 609,
+  "common_columns": 609
+}

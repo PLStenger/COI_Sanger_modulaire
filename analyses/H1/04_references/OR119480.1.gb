@@ -1,0 +1,82 @@
+LOCUS       OR119480                1493 bp    DNA     linear   INV 26-MAR-2024
+DEFINITION  Bactrocera dorsalis voucher UHIM.ms09623 cytochrome oxidase subunit
+            1 (COI) gene, partial cds; mitochondrial.
+ACCESSION   OR119480
+VERSION     OR119480.1
+KEYWORDS    BARCODE.
+SOURCE      mitochondrion Bactrocera dorsalis (oriental fruit fly)
+  ORGANISM  Bactrocera dorsalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea;
+            Allotriocarida; Hexapoda; Insecta; Pterygota; Neoptera; Eumetabola;
+            Endopterygota; Aparaglossata; Panorpida; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+REFERENCE   1  (bases 1 to 1493)
+  AUTHORS   Doorenweerd,C., San Jose,M., Geib,S., Barr,N. and Rubinoff,D.
+  TITLE     Genomic data reveal new species and the limits of mtDNA barcode
+            diagnostics to contain a global pest species complex (Diptera:
+            Tephritidae: Dacinae)
+  JOURNAL   Syst Entomol 49 (2), 279-293 (2024)
+  REMARK    DOI: 10.1111/syen.12616
+REFERENCE   2  (bases 1 to 1493)
+  AUTHORS   Doorenweerd,C., San jose,M., Geib,S., Barr,N. and Rubinoff,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUN-2023) Department of Plant and Environmental
+            Protection Sciences, University of Hawaii at Manoa, 3050 Maile way,
+            Honolulu, HI 96813, USA
+FEATURES             Location/Qualifiers
+     source          1..1493
+                     /organism="Bactrocera dorsalis"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="UHIM.ms09623"
+                     /db_xref="BOLD:DACIN2976-20.COI-5P"
+                     /db_xref="taxon:27457"
+                     /geo_loc_name="China: Yunnan, Jinghong, JingLan Hotel"
+                     /lat_lon="22.0043 N 100.798 E"
+                     /collected_by="D. Rubinoff & M. San Jose"
+                     /identified_by="Michael San jose"
+     gene            <1..>1493
+                     /gene="COI"
+     CDS             <1..>1493
+                     /gene="COI"
+                     /codon_start=2
+                     /transl_table=5
+                     /product="cytochrome oxidase subunit 1"
+                     /protein_id="WXH76720.1"
+                     /translation="TLYFIFGAWAGMVGTSLSILVRAELGHPGALIGDDQIYNVIVTA
+                     HAFVMIFFMVMPIMIGGFGNWLVPLMLGAPDMAFPRMNNMSFWLLPPSLTLLLVSSMV
+                     ENGAGTGWTVYPPLSSVIAHGGASVDLAIFSLHLAGISSILGAVNFITTVINMRSTGI
+                     TFDRMPLFVWAVVLTALLLLLSLPVLAGAITMLLTDRNLNTSFFDPAGGGDPILYQHL
+                     FWFFGHPEVYILILPGFGMISHIISQESGKKETFGSLGMIYAMMAIGLLGFIVWAHHM
+                     FTVGMDVDTRAYFTSATMIIAVPTGIKIFSWLATLHGTQLNYSPAMLWALGFVFLFTV
+                     GGLTGVVLANSSVDIILHDTYYVVAHFHYVLSMGAVFAIMAGFVHWYPLFTGLVLNPK
+                     WLKSQFIIMFIGVNLTFFPQHFLGLAGMPRRYSDYPDAYTTWNVVSTIGSSISLLGIL
+                     FFLFIIWESLVTQRQVIYPMQLSSSIEWLQNTPPAEHSYSELPLLTN"
+ORIGIN      
+        1 aactttatat tttatcttcg gagcctgagc aggaatagta ggaacatccc ttagaatttt
+       61 agtccgagct gaactcggtc acccaggagc tttaatcggt gacgatcaaa tttataatgt
+      121 aattgtaaca gctcatgctt tcgtaataat tttctttata gttataccaa ttataattgg
+      181 tggatttgga aattgacttg ttcctttaat attaggagct cccgatatag catttccacg
+      241 aatgaataat ataagatttt gattattacc tccttccctt acattactat tagtaagaag
+      301 tatagtagaa aacggagctg gtacaggttg aacagtttac ccacccctat catctgttat
+      361 tgcacacgga ggagcttcag ttgacctagc tattttttca cttcacttag cgggtatttc
+      421 ctcaatttta ggagcagtaa atttcattac aacagtaatt aatatacgat cgacaggaat
+      481 cacctttgat cgaatacctc tattcgtttg agcagttgta ttaacagctt tattactttt
+      541 attatcatta ccagttttag caggggctat tactatatta ctaacagacc gaaacttaaa
+      601 tacttccttt tttgaccctg ccggaggagg agaccctatt ctttaccaac atttattttg
+      661 attctttgga cacccagaag tttatatttt aattcttcca ggattcggaa taatttccca
+      721 tattattagt caagaatcag gaaagaagga aacatttgga tctctaggaa taatttatgc
+      781 tataatagca attggtctat taggatttat tgtatgagct catcacatat tcacagtagg
+      841 aatagatgta gatactcgtg cctatttcac ttcagctaca ataatcattg cggtacccac
+      901 aggtattaaa atttttagtt gactagctac attacacggt acacaattaa actattcacc
+      961 agccatattg tgagccctag gatttgtatt cctatttaca gtaggaggat taacaggagt
+     1021 agttcttgct aattcatctg tagatattat tcttcatgac acatattacg tagtagctca
+     1081 tttccactat gtattatcaa taggagcagt ctttgctatt atagcaggat tcgttcactg
+     1141 atacccccta tttacagggc tagtattaaa tcctaaatga ttaaaaagtc aatttattat
+     1201 catgtttatc ggagtaaatt taaccttctt cccacaacac tttttagggt tagctggtat
+     1261 acctcgacga tattcagact atccagatgc ttacacaaca tgaaatgtag tttctactat
+     1321 tggttcatct atttctttac taggaatttt attcttccta ttcatcattt gagaaagttt
+     1381 agtaacacaa cgacaagtaa tttaccctat acagcttagt tcttcaattg aatgacttca
+     1441 aaatacccct ccagctgaac acagttattc agaactacct cttttaacta att
+//
+

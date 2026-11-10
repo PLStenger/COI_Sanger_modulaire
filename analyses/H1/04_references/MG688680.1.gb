@@ -1,0 +1,88 @@
+LOCUS       MG688680                1488 bp    DNA     linear   ENV 22-APR-2019
+DEFINITION  Bactrocera dorsalis clone PZH_46 cytochrome oxidase subunit I (COI)
+            gene, partial cds; mitochondrial.
+ACCESSION   MG688680
+VERSION     MG688680.1
+KEYWORDS    ENV.
+SOURCE      mitochondrion Bactrocera dorsalis (oriental fruit fly)
+  ORGANISM  Bactrocera dorsalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea;
+            Allotriocarida; Hexapoda; Insecta; Pterygota; Neoptera; Eumetabola;
+            Endopterygota; Aparaglossata; Panorpida; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+REFERENCE   1  (bases 1 to 1488)
+  AUTHORS   Qin,Y.-J., Krosch,M.N., Schutze,M.K., Zhang,Y., Wang,X.-X.,
+            Prabhakar,C.S., Susanto,A., Hee,A.K.W., Ekesi,S., Badji,K.,
+            Khan,M., Wu,J.-J., Wang,Q.-L., Yan,G., Zhu,L.-H., Zhao,Z.-H.,
+            Liu,L.-J., Clarke,A.R. and Li,Z.-H.
+  TITLE     Population structure of a global agricultural invasive pest,
+            Bactrocera dorsalis (Diptera: Tephritidae)
+  JOURNAL   Evol Appl 11 (10), 1990-2003 (2018)
+  REMARK    DOI: 10.1111/eva.12701
+REFERENCE   2  (bases 1 to 1488)
+  AUTHORS   Qin,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-DEC-2017) Entomology, China Agricultural University,
+            No. 2 Yuanmingyuan West Road, Beijing 100193, China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: ContigExpress v. June 20, 2000
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1488
+                     /organism="Bactrocera dorsalis"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="traps"
+                     /db_xref="taxon:27457"
+                     /clone="PZH_46"
+                     /environmental_sample
+                     /geo_loc_name="China"
+                     /lat_lon="26.421 N 101.762 E"
+                     /collection_date="2014"
+                     /note="amplified with species-specific primers"
+     gene            <1..>1488
+                     /gene="COI"
+     CDS             <1..>1488
+                     /gene="COI"
+                     /codon_start=1
+                     /transl_table=5
+                     /product="cytochrome oxidase subunit I"
+                     /protein_id="QCC22634.1"
+                     /translation="TNHKDIGTLYFIFGAWAGMVGTSLSILVRAELGHPGALIGDDQI
+                     YNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMLGAPDMAFPRMNNMSFWLLPPSLTL
+                     LLVSSMVENGAGTGWTVYPPLSSVIAHGGASVDLAIFSLHLAGISSILGAVNFITTVI
+                     NMRSTGITFDRMPLFVWAVVLTALLLLLSLPVLAGAITMLLTDRNLNTSFFDPAGGGD
+                     PILYQHLFWFFGHPEVYILILPGFGMISHIISQESGKKETFGSLGMIYAMMAIGLLGF
+                     IVWAHHMFTVGMDVDTRAYFTSATMIIAVPTGIKIFSWLATLHGTQLNYSPAMLWALG
+                     FVFLFTVGGLTGVVLANSSVDIILHDTYYVVAHFHYVLSMGAVFAIMAGFVHWYPLFT
+                     GLVLNPKWLKSQFIIMFIGVNLTFFPQHFLGLAGMPRRYSDYPDAYTTWNVVSTIGSS
+                     ISLLGILFFLFIIWESLVTQRQVIYPMQLSSSIEWLQNTPPAEHSY"
+ORIGIN      
+        1 acaaatcata aagatattgg aactttatat tttatcttcg gagcctgagc aggaatagta
+       61 ggaacatccc ttagaatttt agtccgagct gaactcggtc acccaggagc tttaatcggt
+      121 gacgatcaaa tttataatgt aattgtaaca gctcatgctt tcgtaataat tttctttata
+      181 gttataccaa ttataattgg tggatttgga aattgacttg ttcctttaat attaggagct
+      241 cccgatatag catttccacg aatgaataat ataagatttt gattattacc tccttccctt
+      301 acattactat tagtaagaag tatagtagaa aacggagctg gtacaggttg aacagtttac
+      361 ccacccctat catctgttat tgcacacgga ggagcttcag ttgacctagc tattttttca
+      421 cttcacttag cgggtatttc ctcaatttta ggagcagtaa atttcattac aacagtaatt
+      481 aatatacgat cgacaggaat cacctttgat cgaatacctc tattcgtttg agcagttgta
+      541 ttaacagctt tattactttt attatcatta ccagttttag caggggctat tactatatta
+      601 ctaacagacc gaaacttaaa tacttccttt tttgaccctg ccggaggagg agatcctatt
+      661 ctttaccaac atttattttg attctttgga cacccagaag tttatatttt aattcttcca
+      721 ggattcggaa taatttccca cattattagc caagaatcag gaaagaagga aacatttgga
+      781 tctctaggaa taatttatgc tataatagca attggtctat tagggtttat tgtatgagct
+      841 catcacatat tcacagtagg aatagatgta gatactcgtg cctatttcac ttcagctaca
+      901 ataatcattg cggtacccac aggtattaaa atttttagtt gactagctac attacacggt
+      961 acacaattaa actattcacc agccatattg tgagccctag ggtttgtatt cctatttaca
+     1021 gtaggaggat taacaggagt agttcttgct aattcatctg tagatattat tcttcatgat
+     1081 acatattacg tagtagctca tttccactat gtattatcaa taggagcagt ctttgctatt
+     1141 atagcaggat tcgttcactg atacccccta tttacagggc tagtattaaa tcctaaatga
+     1201 ttaaaaagtc aatttattat catgtttatc ggagtaaatt taaccttctt cccacaacac
+     1261 tttttaggat tagctggtat acctcgacga tattcagact atccagatgc ttacacaaca
+     1321 tgaaatgtag tttctactat tggttcatct atttctttac taggaatttt attcttccta
+     1381 ttcatcattt gagaaagttt agtaacacaa cgacaagtaa tttaccctat acagcttagt
+     1441 tcttcaattg aatgacttca aaatacccct ccagctgaac acagttat
+//
+

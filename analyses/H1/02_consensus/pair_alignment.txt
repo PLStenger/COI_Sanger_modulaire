@@ -1,0 +1,47 @@
+target            0 --------------------------------------------CCTGAGCAGGAATAGT
+                  0 --------------------------------------------||||||||||||||||
+query             0 ANNNNNNNNNAAAGATATTGGAACTTTATATTTTATCTTCGGAGCCTGAGCAGGAATAGT
+
+target           16 AGGAACATCCCTTAGAATTTTAGTCCGAGCTGAACTCGGTCACCCAGGAGCTTTAATCGG
+                 60 ||||||||||||||||||||||||||||||||||||||||||||||||||||||.|||||
+query            60 AGGAACATCCCTTAGAATTTTAGTCCGAGCTGAACTCGGTCACCCAGGAGCTTTNATCGG
+
+target           76 TGACGATCAAATTTATAATGTAATTGTAACAGCTCATGCTTTCGTAATAATTTTCTTTAT
+                120 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           120 TGACGATCAAATTTATAATGTAATTGTAACAGCTCATGCTTTCGTAATAATTTTCTTTAT
+
+target          136 AGTTATACCAATTATAATTGGTGGATTTGGAAATTGACTTGTTCCTTTAATATTAGGAGC
+                180 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           180 AGTTATACCAATTATAATTGGTGGATTTGGAAATTGACTTGTTCCTTTAATATTAGGAGC
+
+target          196 TCCCGATATAGCATTTCCACGAATGAATAATATAAGATTTTGATTATTACCTCCTTCCCT
+                240 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           240 TCCCGATATAGCATTTCCACGAATGAATAATATAAGATTTTGATTATTACCTCCTTCCCT
+
+target          256 TACATTACTATTAGTAAGAAGTATAGTAGAAAACGGAGCTGGTACAGGTTGAACAGTTTA
+                300 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           300 TACATTACTATTAGTAAGAAGTATAGTAGAAAACGGAGCTGGTACAGGTTGAACAGTTTA
+
+target          316 CCCACCCCTATCATCTGTTATTGCACACGGAGGAGCTTCAGTTGACCTAGCTATTTTTTC
+                360 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           360 CCCACCCCTATCATCTGTTATTGCACACGGAGGAGCTTCAGTTGACCTAGCTATTTTTTC
+
+target          376 ACTTCACTTAGCGGGTATTTCCTCAATTTTAGGAGCAGTAAATTTCATTACAACAGTAAT
+                420 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           420 ACTTCACTTAGCGGGTATTTCCTCAATTTTAGGAGCAGTAAATTTCATTACAACAGTAAT
+
+target          436 TAATATACGATCGACAGGAATCACCTTTGATCGAATACCTCTATTCGTTTGAGCAGTTGT
+                480 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           480 TAATATACGATCGACAGGAATCACCTTTGATCGAATACCTCTATTCGTTTGAGCAGTTGT
+
+target          496 ATTAACAGCTTTATTACTTTTATTATCATTACCAGTTTTAGCAGGGGCTATTACTATATT
+                540 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           540 ATTAACAGCTTTATTACTTTTATTATCATTACCAGTTTTAGCAGGGGCTATTACTATATT
+
+target          556 ACTAACAGACCGAAACTTAAATACTTCCTTTTTTGACCCTGCCGGANGAGGAG-------
+                600 |||||||||..||||||||||||||||||||||||||||.||||||.||||||-------
+query           600 ACTAACAGANNGAAACTTAAATACTTCCTTTTTTGACCCNGCCGGAGGAGGAGNNCNNNN
+
+target          609 ---ATCCTATTCTTTACCAACATTTANNTGATTTTTTGGTCNNNN 651
+                660 --------------------------------------------- 705
+query           660 NNN------------------------------------------ 663

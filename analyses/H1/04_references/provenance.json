@@ -1,0 +1,7 @@
+{
+  "query_sha256": "ba6bdccea217ca44bb702b3fa8419cd3d385e8bd0cffe6d7cb73cc1c15a1436e",
+  "panel_sha256": "34bfcd01d46d1fdd619ff58e5e4b751176ee6a2d7a4c9e96ed2bfd62068e419d",
+  "fasta_sha256": "6101ef20b46e13724327da3aee4b95c484a1a913adae1c5563dd558a77bbfef5",
+  "metadata_sha256": "2a580f34751bf802a3fc22c1d0ba1fe033ff655759fa0dff74c96e48903b5a21",
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402"
+}

@@ -1,0 +1,706 @@
+alignment_column	consensus_position	f_trimmed_position	r_oriented_position	f_base	r_base	f_q	r_q	call	status
+1			1	-	A	0	34		outside_double_coverage
+2			2	-	N	0	6		outside_double_coverage
+3			3	-	N	0	3		outside_double_coverage
+4			4	-	N	0	1		outside_double_coverage
+5			5	-	N	0	10		outside_double_coverage
+6			6	-	N	0	6		outside_double_coverage
+7			7	-	N	0	1		outside_double_coverage
+8			8	-	N	0	5		outside_double_coverage
+9			9	-	N	0	9		outside_double_coverage
+10			10	-	N	0	9		outside_double_coverage
+11			11	-	A	0	35		outside_double_coverage
+12			12	-	A	0	58		outside_double_coverage
+13			13	-	A	0	56		outside_double_coverage
+14			14	-	G	0	50		outside_double_coverage
+15			15	-	A	0	40		outside_double_coverage
+16			16	-	T	0	48		outside_double_coverage
+17			17	-	A	0	34		outside_double_coverage
+18			18	-	T	0	45		outside_double_coverage
+19			19	-	T	0	25		outside_double_coverage
+20			20	-	G	0	33		outside_double_coverage
+21			21	-	G	0	56		outside_double_coverage
+22			22	-	A	0	40		outside_double_coverage
+23			23	-	A	0	29		outside_double_coverage
+24			24	-	C	0	24		outside_double_coverage
+25			25	-	T	0	37		outside_double_coverage
+26			26	-	T	0	58		outside_double_coverage
+27			27	-	T	0	52		outside_double_coverage
+28			28	-	A	0	43		outside_double_coverage
+29			29	-	T	0	56		outside_double_coverage
+30			30	-	A	0	36		outside_double_coverage
+31			31	-	T	0	37		outside_double_coverage
+32			32	-	T	0	52		outside_double_coverage
+33			33	-	T	0	56		outside_double_coverage
+34			34	-	T	0	46		outside_double_coverage
+35			35	-	A	0	29		outside_double_coverage
+36			36	-	T	0	51		outside_double_coverage
+37			37	-	C	0	22		outside_double_coverage
+38			38	-	T	0	45		outside_double_coverage
+39			39	-	T	0	51		outside_double_coverage
+40			40	-	C	0	29		outside_double_coverage
+41			41	-	G	0	52		outside_double_coverage
+42			42	-	G	0	56		outside_double_coverage
+43			43	-	A	0	52		outside_double_coverage
+44			44	-	G	0	58		outside_double_coverage
+45	1	1	45	C	C	20	51	C	two_reads_agree
+46	2	2	46	C	C	18	24	C	reverse_only_usable
+47	3	3	47	T	T	15	48	T	reverse_only_usable
+48	4	4	48	G	G	39	47	G	two_reads_agree
+49	5	5	49	A	A	15	56	A	reverse_only_usable
+50	6	6	50	G	G	17	56	G	reverse_only_usable
+51	7	7	51	C	C	17	56	C	reverse_only_usable
+52	8	8	52	A	A	20	52	A	two_reads_agree
+53	9	9	53	G	G	24	52	G	two_reads_agree
+54	10	10	54	G	G	43	56	G	two_reads_agree
+55	11	11	55	A	A	20	56	A	two_reads_agree
+56	12	12	56	A	A	15	48	A	reverse_only_usable
+57	13	13	57	T	T	18	56	T	reverse_only_usable
+58	14	14	58	A	A	36	48	A	two_reads_agree
+59	15	15	59	G	G	33	56	G	two_reads_agree
+60	16	16	60	T	T	36	58	T	two_reads_agree
+61	17	17	61	A	A	38	47	A	two_reads_agree
+62	18	18	62	G	G	29	56	G	two_reads_agree
+63	19	19	63	G	G	28	52	G	two_reads_agree
+64	20	20	64	A	A	23	50	A	two_reads_agree
+65	21	21	65	A	A	28	35	A	two_reads_agree
+66	22	22	66	C	C	24	48	C	two_reads_agree
+67	23	23	67	A	A	19	28	A	reverse_only_usable
+68	24	24	68	T	T	31	38	T	two_reads_agree
+69	25	25	69	C	C	39	47	C	two_reads_agree
+70	26	26	70	C	C	45	58	C	two_reads_agree
+71	27	27	71	C	C	48	38	C	two_reads_agree
+72	28	28	72	T	T	50	51	T	two_reads_agree
+73	29	29	73	T	T	36	29	T	two_reads_agree
+74	30	30	74	A	A	39	48	A	two_reads_agree
+75	31	31	75	G	G	25	58	G	two_reads_agree
+76	32	32	76	A	A	35	52	A	two_reads_agree
+77	33	33	77	A	A	48	52	A	two_reads_agree
+78	34	34	78	T	T	25	38	T	two_reads_agree
+79	35	35	79	T	T	58	42	T	two_reads_agree
+80	36	36	80	T	T	52	45	T	two_reads_agree
+81	37	37	81	T	T	48	52	T	two_reads_agree
+82	38	38	82	A	A	48	52	A	two_reads_agree
+83	39	39	83	G	G	36	32	G	two_reads_agree
+84	40	40	84	T	T	45	51	T	two_reads_agree
+85	41	41	85	C	C	47	42	C	two_reads_agree
+86	42	42	86	C	C	48	52	C	two_reads_agree
+87	43	43	87	G	G	25	56	G	two_reads_agree
+88	44	44	88	A	A	35	56	A	two_reads_agree
+89	45	45	89	G	G	27	52	G	two_reads_agree
+90	46	46	90	C	C	32	52	C	two_reads_agree
+91	47	47	91	T	T	33	39	T	two_reads_agree
+92	48	48	92	G	G	34	56	G	two_reads_agree
+93	49	49	93	A	A	36	56	A	two_reads_agree
+94	50	50	94	A	A	58	56	A	two_reads_agree
+95	51	51	95	C	C	52	36	C	two_reads_agree
+96	52	52	96	T	T	56	52	T	two_reads_agree
+97	53	53	97	C	C	56	58	C	two_reads_agree
+98	54	54	98	G	G	52	58	G	two_reads_agree
+99	55	55	99	G	G	52	32	G	two_reads_agree
+100	56	56	100	T	T	58	36	T	two_reads_agree
+101	57	57	101	C	C	35	53	C	two_reads_agree
+102	58	58	102	A	A	42	58	A	two_reads_agree
+103	59	59	103	C	C	52	56	C	two_reads_agree
+104	60	60	104	C	C	58	56	C	two_reads_agree
+105	61	61	105	C	C	52	56	C	two_reads_agree
+106	62	62	106	A	A	36	53	A	two_reads_agree
+107	63	63	107	G	G	53	58	G	two_reads_agree
+108	64	64	108	G	G	54	56	G	two_reads_agree
+109	65	65	109	A	A	54	56	A	two_reads_agree
+110	66	66	110	G	G	39	56	G	two_reads_agree
+111	67	67	111	C	C	58	56	C	two_reads_agree
+112	68	68	112	T	T	58	56	T	two_reads_agree
+113	69	69	113	T	T	58	58	T	two_reads_agree
+114	70	70	114	T	T	54	51	T	two_reads_agree
+115	71	71	115	A	N	54	12	A	forward_only_usable
+116	72	72	116	A	A	54	51	A	two_reads_agree
+117	73	73	117	T	T	54	52	T	two_reads_agree
+118	74	74	118	C	C	56	56	C	two_reads_agree
+119	75	75	119	G	G	58	56	G	two_reads_agree
+120	76	76	120	G	G	54	52	G	two_reads_agree
+121	77	77	121	T	T	56	53	T	two_reads_agree
+122	78	78	122	G	G	56	56	G	two_reads_agree
+123	79	79	123	A	A	54	58	A	two_reads_agree
+124	80	80	124	C	C	33	56	C	two_reads_agree
+125	81	81	125	G	G	53	56	G	two_reads_agree
+126	82	82	126	A	A	54	52	A	two_reads_agree
+127	83	83	127	T	T	54	52	T	two_reads_agree
+128	84	84	128	C	C	52	53	C	two_reads_agree
+129	85	85	129	A	A	56	53	A	two_reads_agree
+130	86	86	130	A	A	56	53	A	two_reads_agree
+131	87	87	131	A	A	58	54	A	two_reads_agree
+132	88	88	132	T	T	56	54	T	two_reads_agree
+133	89	89	133	T	T	58	58	T	two_reads_agree
+134	90	90	134	T	T	54	56	T	two_reads_agree
+135	91	91	135	A	A	54	56	A	two_reads_agree
+136	92	92	136	T	T	54	56	T	two_reads_agree
+137	93	93	137	A	A	54	54	A	two_reads_agree
+138	94	94	138	A	A	58	54	A	two_reads_agree
+139	95	95	139	T	T	54	53	T	two_reads_agree
+140	96	96	140	G	G	54	56	G	two_reads_agree
+141	97	97	141	T	T	55	56	T	two_reads_agree
+142	98	98	142	A	A	55	54	A	two_reads_agree
+143	99	99	143	A	A	58	56	A	two_reads_agree
+144	100	100	144	T	T	54	58	T	two_reads_agree
+145	101	101	145	T	T	55	38	T	two_reads_agree
+146	102	102	146	G	G	54	54	G	two_reads_agree
+147	103	103	147	T	T	56	58	T	two_reads_agree
+148	104	104	148	A	A	58	54	A	two_reads_agree
+149	105	105	149	A	A	58	56	A	two_reads_agree
+150	106	106	150	C	C	54	56	C	two_reads_agree
+151	107	107	151	A	A	46	56	A	two_reads_agree
+152	108	108	152	G	G	51	58	G	two_reads_agree
+153	109	109	153	C	C	55	54	C	two_reads_agree
+154	110	110	154	T	T	54	56	T	two_reads_agree
+155	111	111	155	C	C	54	56	C	two_reads_agree
+156	112	112	156	A	A	54	56	A	two_reads_agree
+157	113	113	157	T	T	39	58	T	two_reads_agree
+158	114	114	158	G	G	55	56	G	two_reads_agree
+159	115	115	159	C	C	55	56	C	two_reads_agree
+160	116	116	160	T	T	55	47	T	two_reads_agree
+161	117	117	161	T	T	58	54	T	two_reads_agree
+162	118	118	162	T	T	55	58	T	two_reads_agree
+163	119	119	163	C	C	55	46	C	two_reads_agree
+164	120	120	164	G	G	58	54	G	two_reads_agree
+165	121	121	165	T	T	54	58	T	two_reads_agree
+166	122	122	166	A	A	56	52	A	two_reads_agree
+167	123	123	167	A	A	56	54	A	two_reads_agree
+168	124	124	168	T	T	56	58	T	two_reads_agree
+169	125	125	169	A	A	56	56	A	two_reads_agree
+170	126	126	170	A	A	58	56	A	two_reads_agree
+171	127	127	171	T	T	56	54	T	two_reads_agree
+172	128	128	172	T	T	58	58	T	two_reads_agree
+173	129	129	173	T	T	58	58	T	two_reads_agree
+174	130	130	174	T	T	55	54	T	two_reads_agree
+175	131	131	175	C	C	58	58	C	two_reads_agree
+176	132	132	176	T	T	58	58	T	two_reads_agree
+177	133	133	177	T	T	58	58	T	two_reads_agree
+178	134	134	178	T	T	54	52	T	two_reads_agree
+179	135	135	179	A	A	55	56	A	two_reads_agree
+180	136	136	180	T	T	55	56	T	two_reads_agree
+181	137	137	181	A	A	54	54	A	two_reads_agree
+182	138	138	182	G	G	55	54	G	two_reads_agree
+183	139	139	183	T	T	58	58	T	two_reads_agree
+184	140	140	184	T	T	54	56	T	two_reads_agree
+185	141	141	185	A	A	56	58	A	two_reads_agree
+186	142	142	186	T	T	58	56	T	two_reads_agree
+187	143	143	187	A	A	56	58	A	two_reads_agree
+188	144	144	188	C	C	55	54	C	two_reads_agree
+189	145	145	189	C	C	54	54	C	two_reads_agree
+190	146	146	190	A	A	54	58	A	two_reads_agree
+191	147	147	191	A	A	56	54	A	two_reads_agree
+192	148	148	192	T	T	58	54	T	two_reads_agree
+193	149	149	193	T	T	54	56	T	two_reads_agree
+194	150	150	194	A	A	55	56	A	two_reads_agree
+195	151	151	195	T	T	56	58	T	two_reads_agree
+196	152	152	196	A	A	56	56	A	two_reads_agree
+197	153	153	197	A	A	55	58	A	two_reads_agree
+198	154	154	198	T	T	55	49	T	two_reads_agree
+199	155	155	199	T	T	58	52	T	two_reads_agree
+200	156	156	200	G	G	51	54	G	two_reads_agree
+201	157	157	201	G	G	46	56	G	two_reads_agree
+202	158	158	202	T	T	55	56	T	two_reads_agree
+203	159	159	203	G	G	55	54	G	two_reads_agree
+204	160	160	204	G	G	56	56	G	two_reads_agree
+205	161	161	205	A	A	54	58	A	two_reads_agree
+206	162	162	206	T	T	54	58	T	two_reads_agree
+207	163	163	207	T	T	56	54	T	two_reads_agree
+208	164	164	208	T	T	56	46	T	two_reads_agree
+209	165	165	209	G	G	56	54	G	two_reads_agree
+210	166	166	210	G	G	55	58	G	two_reads_agree
+211	167	167	211	A	A	41	54	A	two_reads_agree
+212	168	168	212	A	A	51	58	A	two_reads_agree
+213	169	169	213	A	A	55	54	A	two_reads_agree
+214	170	170	214	T	T	55	58	T	two_reads_agree
+215	171	171	215	T	T	55	55	T	two_reads_agree
+216	172	172	216	G	G	58	56	G	two_reads_agree
+217	173	173	217	A	A	54	56	A	two_reads_agree
+218	174	174	218	C	C	54	56	C	two_reads_agree
+219	175	175	219	T	T	55	58	T	two_reads_agree
+220	176	176	220	T	T	55	56	T	two_reads_agree
+221	177	177	221	G	G	55	58	G	two_reads_agree
+222	178	178	222	T	T	55	56	T	two_reads_agree
+223	179	179	223	T	T	55	56	T	two_reads_agree
+224	180	180	224	C	C	58	58	C	two_reads_agree
+225	181	181	225	C	C	55	58	C	two_reads_agree
+226	182	182	226	T	T	58	43	T	two_reads_agree
+227	183	183	227	T	T	58	58	T	two_reads_agree
+228	184	184	228	T	T	54	55	T	two_reads_agree
+229	185	185	229	A	A	58	54	A	two_reads_agree
+230	186	186	230	A	A	55	55	A	two_reads_agree
+231	187	187	231	T	T	55	58	T	two_reads_agree
+232	188	188	232	A	A	55	51	A	two_reads_agree
+233	189	189	233	T	T	56	58	T	two_reads_agree
+234	190	190	234	T	T	54	56	T	two_reads_agree
+235	191	191	235	A	A	54	56	A	two_reads_agree
+236	192	192	236	G	G	58	55	G	two_reads_agree
+237	193	193	237	G	G	55	55	G	two_reads_agree
+238	194	194	238	A	A	56	55	A	two_reads_agree
+239	195	195	239	G	G	56	56	G	two_reads_agree
+240	196	196	240	C	C	56	54	C	two_reads_agree
+241	197	197	241	T	T	55	54	T	two_reads_agree
+242	198	198	242	C	C	58	55	C	two_reads_agree
+243	199	199	243	C	C	58	55	C	two_reads_agree
+244	200	200	244	C	C	56	58	C	two_reads_agree
+245	201	201	245	G	G	55	55	G	two_reads_agree
+246	202	202	246	A	A	54	55	A	two_reads_agree
+247	203	203	247	T	T	56	58	T	two_reads_agree
+248	204	204	248	A	A	58	58	A	two_reads_agree
+249	205	205	249	T	T	58	58	T	two_reads_agree
+250	206	206	250	A	A	54	56	A	two_reads_agree
+251	207	207	251	G	G	55	55	G	two_reads_agree
+252	208	208	252	C	C	56	55	C	two_reads_agree
+253	209	209	253	A	A	58	54	A	two_reads_agree
+254	210	210	254	T	T	55	55	T	two_reads_agree
+255	211	211	255	T	T	58	55	T	two_reads_agree
+256	212	212	256	T	T	56	54	T	two_reads_agree
+257	213	213	257	C	C	58	58	C	two_reads_agree
+258	214	214	258	C	C	54	55	C	two_reads_agree
+259	215	215	259	A	A	56	58	A	two_reads_agree
+260	216	216	260	C	C	55	55	C	two_reads_agree
+261	217	217	261	G	G	55	58	G	two_reads_agree
+262	218	218	262	A	A	54	58	A	two_reads_agree
+263	219	219	263	A	A	58	55	A	two_reads_agree
+264	220	220	264	T	T	55	54	T	two_reads_agree
+265	221	221	265	G	G	55	54	G	two_reads_agree
+266	222	222	266	A	A	54	58	A	two_reads_agree
+267	223	223	267	A	A	58	55	A	two_reads_agree
+268	224	224	268	T	T	58	56	T	two_reads_agree
+269	225	225	269	A	A	56	56	A	two_reads_agree
+270	226	226	270	A	A	58	56	A	two_reads_agree
+271	227	227	271	T	T	58	58	T	two_reads_agree
+272	228	228	272	A	A	56	58	A	two_reads_agree
+273	229	229	273	T	T	56	58	T	two_reads_agree
+274	230	230	274	A	A	58	56	A	two_reads_agree
+275	231	231	275	A	A	55	58	A	two_reads_agree
+276	232	232	276	G	G	55	58	G	two_reads_agree
+277	233	233	277	A	A	54	55	A	two_reads_agree
+278	234	234	278	T	T	54	56	T	two_reads_agree
+279	235	235	279	T	T	56	58	T	two_reads_agree
+280	236	236	280	T	T	58	58	T	two_reads_agree
+281	237	237	281	T	T	56	55	T	two_reads_agree
+282	238	238	282	G	G	55	54	G	two_reads_agree
+283	239	239	283	A	A	56	56	A	two_reads_agree
+284	240	240	284	T	T	54	58	T	two_reads_agree
+285	241	241	285	T	T	54	55	T	two_reads_agree
+286	242	242	286	A	A	58	56	A	two_reads_agree
+287	243	243	287	T	T	56	55	T	two_reads_agree
+288	244	244	288	T	T	54	58	T	two_reads_agree
+289	245	245	289	A	A	56	58	A	two_reads_agree
+290	246	246	290	C	C	56	54	C	two_reads_agree
+291	247	247	291	C	C	55	54	C	two_reads_agree
+292	248	248	292	T	T	55	55	T	two_reads_agree
+293	249	249	293	C	C	58	55	C	two_reads_agree
+294	250	250	294	C	C	55	55	C	two_reads_agree
+295	251	251	295	T	T	58	49	T	two_reads_agree
+296	252	252	296	T	T	55	41	T	two_reads_agree
+297	253	253	297	C	C	56	58	C	two_reads_agree
+298	254	254	298	C	C	58	55	C	two_reads_agree
+299	255	255	299	C	C	55	43	C	two_reads_agree
+300	256	256	300	T	T	55	49	T	two_reads_agree
+301	257	257	301	T	T	55	43	T	two_reads_agree
+302	258	258	302	A	A	58	58	A	two_reads_agree
+303	259	259	303	C	C	55	56	C	two_reads_agree
+304	260	260	304	A	A	54	54	A	two_reads_agree
+305	261	261	305	T	T	56	55	T	two_reads_agree
+306	262	262	306	T	T	54	56	T	two_reads_agree
+307	263	263	307	A	A	56	55	A	two_reads_agree
+308	264	264	308	C	C	55	55	C	two_reads_agree
+309	265	265	309	T	T	54	54	T	two_reads_agree
+310	266	266	310	A	A	56	55	A	two_reads_agree
+311	267	267	311	T	T	55	58	T	two_reads_agree
+312	268	268	312	T	T	41	56	T	two_reads_agree
+313	269	269	313	A	A	41	54	A	two_reads_agree
+314	270	270	314	G	G	55	56	G	two_reads_agree
+315	271	271	315	T	T	55	58	T	two_reads_agree
+316	272	272	316	A	A	58	55	A	two_reads_agree
+317	273	273	317	A	A	56	58	A	two_reads_agree
+318	274	274	318	G	G	58	58	G	two_reads_agree
+319	275	275	319	A	A	55	58	A	two_reads_agree
+320	276	276	320	A	A	56	58	A	two_reads_agree
+321	277	277	321	G	G	56	55	G	two_reads_agree
+322	278	278	322	T	T	58	56	T	two_reads_agree
+323	279	279	323	A	A	56	56	A	two_reads_agree
+324	280	280	324	T	T	55	54	T	two_reads_agree
+325	281	281	325	A	A	55	54	A	two_reads_agree
+326	282	282	326	G	G	55	56	G	two_reads_agree
+327	283	283	327	T	T	55	56	T	two_reads_agree
+328	284	284	328	A	A	55	54	A	two_reads_agree
+329	285	285	329	G	G	58	55	G	two_reads_agree
+330	286	286	330	A	A	55	55	A	two_reads_agree
+331	287	287	331	A	A	58	58	A	two_reads_agree
+332	288	288	332	A	A	58	55	A	two_reads_agree
+333	289	289	333	A	A	55	55	A	two_reads_agree
+334	290	290	334	C	C	54	55	C	two_reads_agree
+335	291	291	335	G	G	55	58	G	two_reads_agree
+336	292	292	336	G	G	56	58	G	two_reads_agree
+337	293	293	337	A	A	54	56	A	two_reads_agree
+338	294	294	338	G	G	54	55	G	two_reads_agree
+339	295	295	339	C	C	58	58	C	two_reads_agree
+340	296	296	340	T	T	56	54	T	two_reads_agree
+341	297	297	341	G	G	56	54	G	two_reads_agree
+342	298	298	342	G	G	56	56	G	two_reads_agree
+343	299	299	343	T	T	56	56	T	two_reads_agree
+344	300	300	344	A	A	55	54	A	two_reads_agree
+345	301	301	345	C	C	56	55	C	two_reads_agree
+346	302	302	346	A	A	54	55	A	two_reads_agree
+347	303	303	347	G	G	55	55	G	two_reads_agree
+348	304	304	348	G	G	55	56	G	two_reads_agree
+349	305	305	349	T	T	58	56	T	two_reads_agree
+350	306	306	350	T	T	58	56	T	two_reads_agree
+351	307	307	351	G	G	56	54	G	two_reads_agree
+352	308	308	352	A	A	54	55	A	two_reads_agree
+353	309	309	353	A	A	56	58	A	two_reads_agree
+354	310	310	354	C	C	58	58	C	two_reads_agree
+355	311	311	355	A	A	56	58	A	two_reads_agree
+356	312	312	356	G	G	58	56	G	two_reads_agree
+357	313	313	357	T	T	55	58	T	two_reads_agree
+358	314	314	358	T	T	58	58	T	two_reads_agree
+359	315	315	359	T	T	56	58	T	two_reads_agree
+360	316	316	360	A	A	58	55	A	two_reads_agree
+361	317	317	361	C	C	56	55	C	two_reads_agree
+362	318	318	362	C	C	58	55	C	two_reads_agree
+363	319	319	363	C	C	55	55	C	two_reads_agree
+364	320	320	364	A	A	56	55	A	two_reads_agree
+365	321	321	365	C	C	56	55	C	two_reads_agree
+366	322	322	366	C	C	58	58	C	two_reads_agree
+367	323	323	367	C	C	58	58	C	two_reads_agree
+368	324	324	368	C	C	55	58	C	two_reads_agree
+369	325	325	369	T	T	54	54	T	two_reads_agree
+370	326	326	370	A	A	56	55	A	two_reads_agree
+371	327	327	371	T	T	58	54	T	two_reads_agree
+372	328	328	372	C	C	56	55	C	two_reads_agree
+373	329	329	373	A	A	55	55	A	two_reads_agree
+374	330	330	374	T	T	55	41	T	two_reads_agree
+375	331	331	375	C	C	55	58	C	two_reads_agree
+376	332	332	376	T	T	56	54	T	two_reads_agree
+377	333	333	377	G	G	58	56	G	two_reads_agree
+378	334	334	378	T	T	58	58	T	two_reads_agree
+379	335	335	379	T	T	56	56	T	two_reads_agree
+380	336	336	380	A	A	58	56	A	two_reads_agree
+381	337	337	381	T	T	54	56	T	two_reads_agree
+382	338	338	382	T	T	58	58	T	two_reads_agree
+383	339	339	383	G	G	56	56	G	two_reads_agree
+384	340	340	384	C	C	56	58	C	two_reads_agree
+385	341	341	385	A	A	58	56	A	two_reads_agree
+386	342	342	386	C	C	58	54	C	two_reads_agree
+387	343	343	387	A	A	56	54	A	two_reads_agree
+388	344	344	388	C	C	56	55	C	two_reads_agree
+389	345	345	389	G	G	56	58	G	two_reads_agree
+390	346	346	390	G	G	56	49	G	two_reads_agree
+391	347	347	391	A	A	54	51	A	two_reads_agree
+392	348	348	392	G	G	52	55	G	two_reads_agree
+393	349	349	393	G	G	58	58	G	two_reads_agree
+394	350	350	394	A	A	54	55	A	two_reads_agree
+395	351	351	395	G	G	55	55	G	two_reads_agree
+396	352	352	396	C	C	55	58	C	two_reads_agree
+397	353	353	397	T	T	55	55	T	two_reads_agree
+398	354	354	398	T	T	58	54	T	two_reads_agree
+399	355	355	399	C	C	56	54	C	two_reads_agree
+400	356	356	400	A	A	56	55	A	two_reads_agree
+401	357	357	401	G	G	55	55	G	two_reads_agree
+402	358	358	402	T	T	55	56	T	two_reads_agree
+403	359	359	403	T	T	55	56	T	two_reads_agree
+404	360	360	404	G	G	56	56	G	two_reads_agree
+405	361	361	405	A	A	54	58	A	two_reads_agree
+406	362	362	406	C	C	54	55	C	two_reads_agree
+407	363	363	407	C	C	58	58	C	two_reads_agree
+408	364	364	408	T	T	55	54	T	two_reads_agree
+409	365	365	409	A	A	55	54	A	two_reads_agree
+410	366	366	410	G	G	55	55	G	two_reads_agree
+411	367	367	411	C	C	58	55	C	two_reads_agree
+412	368	368	412	T	T	54	54	T	two_reads_agree
+413	369	369	413	A	A	51	56	A	two_reads_agree
+414	370	370	414	T	T	55	56	T	two_reads_agree
+415	371	371	415	T	T	58	58	T	two_reads_agree
+416	372	372	416	T	T	55	58	T	two_reads_agree
+417	373	373	417	T	T	58	58	T	two_reads_agree
+418	374	374	418	T	T	58	56	T	two_reads_agree
+419	375	375	419	T	T	55	55	T	two_reads_agree
+420	376	376	420	C	C	54	58	C	two_reads_agree
+421	377	377	421	A	A	55	56	A	two_reads_agree
+422	378	378	422	C	C	56	55	C	two_reads_agree
+423	379	379	423	T	T	58	55	T	two_reads_agree
+424	380	380	424	T	T	51	55	T	two_reads_agree
+425	381	381	425	C	C	54	55	C	two_reads_agree
+426	382	382	426	A	A	55	55	A	two_reads_agree
+427	383	383	427	C	C	55	55	C	two_reads_agree
+428	384	384	428	T	T	56	55	T	two_reads_agree
+429	385	385	429	T	T	56	56	T	two_reads_agree
+430	386	386	430	A	A	55	54	A	two_reads_agree
+431	387	387	431	G	G	51	55	G	two_reads_agree
+432	388	388	432	C	C	58	58	C	two_reads_agree
+433	389	389	433	G	G	58	55	G	two_reads_agree
+434	390	390	434	G	G	56	58	G	two_reads_agree
+435	391	391	435	G	G	58	54	G	two_reads_agree
+436	392	392	436	T	T	56	58	T	two_reads_agree
+437	393	393	437	A	A	56	55	A	two_reads_agree
+438	394	394	438	T	T	54	56	T	two_reads_agree
+439	395	395	439	T	T	58	56	T	two_reads_agree
+440	396	396	440	T	T	56	54	T	two_reads_agree
+441	397	397	441	C	C	55	55	C	two_reads_agree
+442	398	398	442	C	C	58	55	C	two_reads_agree
+443	399	399	443	T	T	55	58	T	two_reads_agree
+444	400	400	444	C	C	55	58	C	two_reads_agree
+445	401	401	445	A	A	55	55	A	two_reads_agree
+446	402	402	446	A	A	56	56	A	two_reads_agree
+447	403	403	447	T	T	56	58	T	two_reads_agree
+448	404	404	448	T	T	56	58	T	two_reads_agree
+449	405	405	449	T	T	58	58	T	two_reads_agree
+450	406	406	450	T	T	54	56	T	two_reads_agree
+451	407	407	451	A	A	54	54	A	two_reads_agree
+452	408	408	452	G	G	58	56	G	two_reads_agree
+453	409	409	453	G	G	55	56	G	two_reads_agree
+454	410	410	454	A	A	56	56	A	two_reads_agree
+455	411	411	455	G	G	55	56	G	two_reads_agree
+456	412	412	456	C	C	55	55	C	two_reads_agree
+457	413	413	457	A	A	55	58	A	two_reads_agree
+458	414	414	458	G	G	58	54	G	two_reads_agree
+459	415	415	459	T	T	55	58	T	two_reads_agree
+460	416	416	460	A	A	58	55	A	two_reads_agree
+461	417	417	461	A	A	58	58	A	two_reads_agree
+462	418	418	462	A	A	56	56	A	two_reads_agree
+463	419	419	463	T	T	56	55	T	two_reads_agree
+464	420	420	464	T	T	58	55	T	two_reads_agree
+465	421	421	465	T	T	58	55	T	two_reads_agree
+466	422	422	466	C	C	54	55	C	two_reads_agree
+467	423	423	467	A	A	56	54	A	two_reads_agree
+468	424	424	468	T	T	55	55	T	two_reads_agree
+469	425	425	469	T	T	55	55	T	two_reads_agree
+470	426	426	470	A	A	58	54	A	two_reads_agree
+471	427	427	471	C	C	56	55	C	two_reads_agree
+472	428	428	472	A	A	56	55	A	two_reads_agree
+473	429	429	473	A	A	56	58	A	two_reads_agree
+474	430	430	474	C	C	54	58	C	two_reads_agree
+475	431	431	475	A	A	56	58	A	two_reads_agree
+476	432	432	476	G	G	55	56	G	two_reads_agree
+477	433	433	477	T	T	54	56	T	two_reads_agree
+478	434	434	478	A	A	56	54	A	two_reads_agree
+479	435	435	479	A	A	56	55	A	two_reads_agree
+480	436	436	480	T	T	56	56	T	two_reads_agree
+481	437	437	481	T	T	54	55	T	two_reads_agree
+482	438	438	482	A	A	56	29	A	two_reads_agree
+483	439	439	483	A	A	58	41	A	two_reads_agree
+484	440	440	484	T	T	58	55	T	two_reads_agree
+485	441	441	485	A	A	56	55	A	two_reads_agree
+486	442	442	486	T	T	56	56	T	two_reads_agree
+487	443	443	487	A	A	55	54	A	two_reads_agree
+488	444	444	488	C	C	55	58	C	two_reads_agree
+489	445	445	489	G	G	58	55	G	two_reads_agree
+490	446	446	490	A	A	55	56	A	two_reads_agree
+491	447	447	491	T	T	56	54	T	two_reads_agree
+492	448	448	492	C	C	56	58	C	two_reads_agree
+493	449	449	493	G	G	56	56	G	two_reads_agree
+494	450	450	494	A	A	54	56	A	two_reads_agree
+495	451	451	495	C	C	56	55	C	two_reads_agree
+496	452	452	496	A	A	58	58	A	two_reads_agree
+497	453	453	497	G	G	56	55	G	two_reads_agree
+498	454	454	498	G	G	58	58	G	two_reads_agree
+499	455	455	499	A	A	41	55	A	two_reads_agree
+500	456	456	500	A	A	55	54	A	two_reads_agree
+501	457	457	501	T	T	56	54	T	two_reads_agree
+502	458	458	502	C	C	56	56	C	two_reads_agree
+503	459	459	503	A	A	56	56	A	two_reads_agree
+504	460	460	504	C	C	56	54	C	two_reads_agree
+505	461	461	505	C	C	58	55	C	two_reads_agree
+506	462	462	506	T	T	58	55	T	two_reads_agree
+507	463	463	507	T	T	58	56	T	two_reads_agree
+508	464	464	508	T	T	55	56	T	two_reads_agree
+509	465	465	509	G	G	55	54	G	two_reads_agree
+510	466	466	510	A	A	54	56	A	two_reads_agree
+511	467	467	511	T	T	56	55	T	two_reads_agree
+512	468	468	512	C	C	56	55	C	two_reads_agree
+513	469	469	513	G	G	56	55	G	two_reads_agree
+514	470	470	514	A	A	58	56	A	two_reads_agree
+515	471	471	515	A	A	55	54	A	two_reads_agree
+516	472	472	516	T	T	56	56	T	two_reads_agree
+517	473	473	517	A	A	56	58	A	two_reads_agree
+518	474	474	518	C	C	54	54	C	two_reads_agree
+519	475	475	519	C	C	58	56	C	two_reads_agree
+520	476	476	520	T	T	49	56	T	two_reads_agree
+521	477	477	521	C	C	55	58	C	two_reads_agree
+522	478	478	522	T	T	54	54	T	two_reads_agree
+523	479	479	523	A	A	51	56	A	two_reads_agree
+524	480	480	524	T	T	56	58	T	two_reads_agree
+525	481	481	525	T	T	56	55	T	two_reads_agree
+526	482	482	526	C	C	58	55	C	two_reads_agree
+527	483	483	527	G	G	56	56	G	two_reads_agree
+528	484	484	528	T	T	56	58	T	two_reads_agree
+529	485	485	529	T	T	58	55	T	two_reads_agree
+530	486	486	530	T	T	55	56	T	two_reads_agree
+531	487	487	531	G	G	49	54	G	two_reads_agree
+532	488	488	532	A	A	51	55	A	two_reads_agree
+533	489	489	533	G	G	58	51	G	two_reads_agree
+534	490	490	534	C	C	58	55	C	two_reads_agree
+535	491	491	535	A	A	55	55	A	two_reads_agree
+536	492	492	536	G	G	55	58	G	two_reads_agree
+537	493	493	537	T	T	56	55	T	two_reads_agree
+538	494	494	538	T	T	56	55	T	two_reads_agree
+539	495	495	539	G	G	58	55	G	two_reads_agree
+540	496	496	540	T	T	56	56	T	two_reads_agree
+541	497	497	541	A	A	56	55	A	two_reads_agree
+542	498	498	542	T	T	54	55	T	two_reads_agree
+543	499	499	543	T	T	54	56	T	two_reads_agree
+544	500	500	544	A	A	56	54	A	two_reads_agree
+545	501	501	545	A	A	56	55	A	two_reads_agree
+546	502	502	546	C	C	56	55	C	two_reads_agree
+547	503	503	547	A	A	52	56	A	two_reads_agree
+548	504	504	548	G	G	56	54	G	two_reads_agree
+549	505	505	549	C	C	56	54	C	two_reads_agree
+550	506	506	550	T	T	58	54	T	two_reads_agree
+551	507	507	551	T	T	58	58	T	two_reads_agree
+552	508	508	552	T	T	54	58	T	two_reads_agree
+553	509	509	553	A	A	56	56	A	two_reads_agree
+554	510	510	554	T	T	56	56	T	two_reads_agree
+555	511	511	555	T	T	52	56	T	two_reads_agree
+556	512	512	556	A	A	56	58	A	two_reads_agree
+557	513	513	557	C	C	58	54	C	two_reads_agree
+558	514	514	558	T	T	54	54	T	two_reads_agree
+559	515	515	559	T	T	56	58	T	two_reads_agree
+560	516	516	560	T	T	58	58	T	two_reads_agree
+561	517	517	561	T	T	52	56	T	two_reads_agree
+562	518	518	562	A	A	58	58	A	two_reads_agree
+563	519	519	563	T	T	54	58	T	two_reads_agree
+564	520	520	564	T	T	41	58	T	two_reads_agree
+565	521	521	565	A	A	56	56	A	two_reads_agree
+566	522	522	566	T	T	54	54	T	two_reads_agree
+567	523	523	567	C	C	52	56	C	two_reads_agree
+568	524	524	568	A	A	56	54	A	two_reads_agree
+569	525	525	569	T	T	56	58	T	two_reads_agree
+570	526	526	570	T	T	56	58	T	two_reads_agree
+571	527	527	571	A	A	58	56	A	two_reads_agree
+572	528	528	572	C	C	56	54	C	two_reads_agree
+573	529	529	573	C	C	43	56	C	two_reads_agree
+574	530	530	574	A	A	38	56	A	two_reads_agree
+575	531	531	575	G	G	58	56	G	two_reads_agree
+576	532	532	576	T	T	58	58	T	two_reads_agree
+577	533	533	577	T	T	54	56	T	two_reads_agree
+578	534	534	578	T	T	54	58	T	two_reads_agree
+579	535	535	579	T	T	52	53	T	two_reads_agree
+580	536	536	580	A	A	54	54	A	two_reads_agree
+581	537	537	581	G	G	53	49	G	two_reads_agree
+582	538	538	582	C	C	53	41	C	two_reads_agree
+583	539	539	583	A	A	54	54	A	two_reads_agree
+584	540	540	584	G	G	46	54	G	two_reads_agree
+585	541	541	585	G	G	41	58	G	two_reads_agree
+586	542	542	586	G	G	35	54	G	two_reads_agree
+587	543	543	587	G	G	46	56	G	two_reads_agree
+588	544	544	588	C	C	53	54	C	two_reads_agree
+589	545	545	589	T	T	53	54	T	two_reads_agree
+590	546	546	590	A	A	56	56	A	two_reads_agree
+591	547	547	591	T	T	52	54	T	two_reads_agree
+592	548	548	592	T	T	35	58	T	two_reads_agree
+593	549	549	593	A	A	53	58	A	two_reads_agree
+594	550	550	594	C	C	47	51	C	two_reads_agree
+595	551	551	595	T	T	43	51	T	two_reads_agree
+596	552	552	596	A	A	56	56	A	two_reads_agree
+597	553	553	597	T	T	56	56	T	two_reads_agree
+598	554	554	598	A	A	39	42	A	two_reads_agree
+599	555	555	599	T	T	54	53	T	two_reads_agree
+600	556	556	600	T	T	52	53	T	two_reads_agree
+601	557	557	601	A	A	53	35	A	two_reads_agree
+602	558	558	602	C	C	54	48	C	two_reads_agree
+603	559	559	603	T	T	52	52	T	two_reads_agree
+604	560	560	604	A	A	52	47	A	two_reads_agree
+605	561	561	605	A	A	56	52	A	two_reads_agree
+606	562	562	606	C	C	56	51	C	two_reads_agree
+607	563	563	607	A	A	52	28	A	two_reads_agree
+608	564	564	608	G	G	53	27	G	two_reads_agree
+609	565	565	609	A	A	54	19	A	forward_only_usable
+610	566	566	610	C	N	54	10	C	forward_only_usable
+611	567	567	611	C	N	54	1	C	forward_only_usable
+612	568	568	612	G	G	56	35	G	two_reads_agree
+613	569	569	613	A	A	56	42	A	two_reads_agree
+614	570	570	614	A	A	56	42	A	two_reads_agree
+615	571	571	615	A	A	38	37	A	two_reads_agree
+616	572	572	616	C	C	56	20	C	two_reads_agree
+617	573	573	617	T	T	56	30	T	two_reads_agree
+618	574	574	618	T	T	52	52	T	two_reads_agree
+619	575	575	619	A	A	53	45	A	two_reads_agree
+620	576	576	620	A	A	58	52	A	two_reads_agree
+621	577	577	621	A	A	53	18	A	forward_only_usable
+622	578	578	622	T	T	58	32	T	two_reads_agree
+623	579	579	623	A	A	58	31	A	two_reads_agree
+624	580	580	624	C	C	58	25	C	two_reads_agree
+625	581	581	625	T	T	46	37	T	two_reads_agree
+626	582	582	626	T	T	53	46	T	two_reads_agree
+627	583	583	627	C	C	58	37	C	two_reads_agree
+628	584	584	628	C	C	45	30	C	two_reads_agree
+629	585	585	629	T	T	56	32	T	two_reads_agree
+630	586	586	630	T	T	58	38	T	two_reads_agree
+631	587	587	631	T	T	56	41	T	two_reads_agree
+632	588	588	632	T	T	53	34	T	two_reads_agree
+633	589	589	633	T	T	58	25	T	two_reads_agree
+634	590	590	634	T	T	42	30	T	two_reads_agree
+635	591	591	635	G	G	53	23	G	two_reads_agree
+636	592	592	636	A	A	52	34	A	two_reads_agree
+637	593	593	637	C	C	35	25	C	two_reads_agree
+638	594	594	638	C	C	58	34	C	two_reads_agree
+639	595	595	639	C	C	56	34	C	two_reads_agree
+640	596	596	640	T	N	56	14	T	forward_only_usable
+641	597	597	641	G	G	56	25	G	two_reads_agree
+642	598	598	642	C	C	52	38	C	two_reads_agree
+643	599	599	643	C	C	52	29	C	two_reads_agree
+644	600	600	644	G	G	35	44	G	two_reads_agree
+645	601	601	645	G	G	49	44	G	two_reads_agree
+646	602	602	646	A	A	45	44	A	two_reads_agree
+647	603	603	647	N	G	8	52	G	reverse_only_usable
+648	604	604	648	G	G	56	40	G	two_reads_agree
+649	605	605	649	A	A	52	33	A	two_reads_agree
+650	606	606	650	G	G	24	50	G	two_reads_agree
+651	607	607	651	G	G	51	36	G	two_reads_agree
+652	608	608	652	A	A	45	29	A	two_reads_agree
+653	609	609	653	G	G	31	29	G	two_reads_agree
+654			654	-	N	0	9		outside_double_coverage
+655			655	-	N	0	13		outside_double_coverage
+656			656	-	C	0	21		outside_double_coverage
+657			657	-	N	0	14		outside_double_coverage
+658			658	-	N	0	10		outside_double_coverage
+659			659	-	N	0	9		outside_double_coverage
+660			660	-	N	0	9		outside_double_coverage
+661			661	-	N	0	7		outside_double_coverage
+662			662	-	N	0	10		outside_double_coverage
+663			663	-	N	0	11		outside_double_coverage
+664		610		A	-	43	0		outside_double_coverage
+665		611		T	-	27	0		outside_double_coverage
+666		612		C	-	52	0		outside_double_coverage
+667		613		C	-	56	0		outside_double_coverage
+668		614		T	-	48	0		outside_double_coverage
+669		615		A	-	58	0		outside_double_coverage
+670		616		T	-	56	0		outside_double_coverage
+671		617		T	-	56	0		outside_double_coverage
+672		618		C	-	58	0		outside_double_coverage
+673		619		T	-	52	0		outside_double_coverage
+674		620		T	-	52	0		outside_double_coverage
+675		621		T	-	38	0		outside_double_coverage
+676		622		A	-	45	0		outside_double_coverage
+677		623		C	-	35	0		outside_double_coverage
+678		624		C	-	33	0		outside_double_coverage
+679		625		A	-	34	0		outside_double_coverage
+680		626		A	-	45	0		outside_double_coverage
+681		627		C	-	56	0		outside_double_coverage
+682		628		A	-	36	0		outside_double_coverage
+683		629		T	-	56	0		outside_double_coverage
+684		630		T	-	58	0		outside_double_coverage
+685		631		T	-	34	0		outside_double_coverage
+686		632		A	-	43	0		outside_double_coverage
+687		633		N	-	7	0		outside_double_coverage
+688		634		N	-	7	0		outside_double_coverage
+689		635		T	-	33	0		outside_double_coverage
+690		636		G	-	36	0		outside_double_coverage
+691		637		A	-	36	0		outside_double_coverage
+692		638		T	-	28	0		outside_double_coverage
+693		639		T	-	56	0		outside_double_coverage
+694		640		T	-	43	0		outside_double_coverage
+695		641		T	-	39	0		outside_double_coverage
+696		642		T	-	32	0		outside_double_coverage
+697		643		T	-	33	0		outside_double_coverage
+698		644		G	-	41	0		outside_double_coverage
+699		645		G	-	19	0		outside_double_coverage
+700		646		T	-	17	0		outside_double_coverage
+701		647		C	-	21	0		outside_double_coverage
+702		648		N	-	10	0		outside_double_coverage
+703		649		N	-	7	0		outside_double_coverage
+704		650		N	-	8	0		outside_double_coverage
+705		651		N	-	1	0		outside_double_coverage

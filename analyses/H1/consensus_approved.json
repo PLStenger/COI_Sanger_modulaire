@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "sha256": "ba6bdccea217ca44bb702b3fa8419cd3d385e8bd0cffe6d7cb73cc1c15a1436e",
+  "candidate_sha256": "eab20f9a9bc3f59ada58cff55d31494290629d5f2126a1af78bc23cf1b28dcaf",
+  "config_sha256": "248acbeb1a808033aa4b17a98c38afb1fab5cdd77cc3a7f0c20cf145cc951402",
+  "coding_offset_0based": 2,
+  "strand_from_candidate": "+",
+  "comment": "Chromatogrammes inspectés ; phase COI +2 confirmée par affichage CDS BLAST ; aucun STOP avec la table mitochondriale 5"
+}

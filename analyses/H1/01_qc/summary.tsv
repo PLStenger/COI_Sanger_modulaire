@@ -1,0 +1,3 @@
+read	file	raw_bp	start_1based	end_1based	trimmed_bp	mean_phred	primers_removed
+forward	VNM-D1-01-LCO_F11_085.ab1	955	20	670	651	51.75	
+reverse	VNM-D1-01-HCO_F11_085.ab1	1001	10	672	663	51.04	
