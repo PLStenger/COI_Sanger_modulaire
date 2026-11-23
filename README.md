@@ -371,49 +371,10 @@ Les lignes Query/Sbjct présentes confirment que l’export inclut les alignemen
 Le bloc suivant, ajouté pendant l’analyse, transforme le tableau du rapport en TSV sans doublons d’accession. Il n’écrase pas le panel final. Il est adapté au format texte BLAST observé ; si l’interface change le format, vérifier le résultat avant utilisation.
 
 ```bash
-python - <<'PY'
-import re
-from pathlib import Path
-
-folder = Path("analyses/H1/03_blast")
-source = folder / "H1_BLAST_2026-11-10_F5XCKAV5016_report.txt"
-destination = folder / "H1_references_depuis_BLAST.tsv"
-rows, seen = [], set()
-in_table = False
-
-for line in source.read_text().splitlines():
-    if "Sequences producing significant alignments:" in line:
-        in_table = True
-        continue
-    if not in_table:
-        continue
-    if line.lstrip().startswith(">"):
-        break
-    if re.match(r"^\s*(?:Alignments\b|Score\s*=|Query\s+\d+)", line):
-        break
-    match = re.search(r"\b([A-Z]{1,6}_?\d+\.\d+)\s*$", line)
-    if not match:
-        continue
-    accession = match.group(1)
-    if accession in seen:
-        continue
-    name = re.match(r"^\s*([A-Z][a-z]+)\s+([a-z][a-z-]+)\b", line)
-    species = " ".join(name.groups()) if name else ""
-    rows.append("\t".join([
-        accession, species, "reference",
-        "BLAST H1 ; RID F5XCKAV5016 ; nom a verifier"
-    ]))
-    seen.add(accession)
-
-if not rows:
-    raise SystemExit("Aucune accession extraite : verifier le rapport.")
-header = "accession\texpected_species\trole\tnotes"
-destination.write_text(header + "\n" + "\n".join(rows) + "\n")
-print(f"{len(rows)} references extraites dans {destination}")
-PY
+python scripts/extraire_refs_blast.py \
+    analyses/H1/03_blast/H1_BLAST_2026-11-10_F5XCKAV5016_report.txt \
+    F5XCKAV5016 H1
 ```
-
-Copier depuis `python - <<'PY'` jusqu’au dernier `PY`, seul sur sa ligne, sans les invites `>` du Terminal. Cette forme évite certaines erreurs rencontrées avec un long `python -c` altéré lors du collage.
 
 ```bash
 head -n 12 analyses/H1/03_blast/H1_references_depuis_BLAST.tsv
