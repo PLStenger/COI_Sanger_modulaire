@@ -195,6 +195,12 @@ open analyses/H1/01_qc/forward_chromatogrammes.pdf
 open analyses/H1/01_qc/reverse_chromatogrammes.pdf
 ```
 
+Si ce message apparait:
+```bash
+ERREUR : Vérifier DI/D1 et la correspondance des fichiers, puis mapping_confirmed=true dans la configuration.
+```
+Le script s’arrête volontairement parce que mapping_confirmed vaut encore false dans configs/H1.json
+
 Le script lit les bases et qualités AB1, retient une plage de qualité et cherche les amorces près des extrémités. Les `.seq` seuls ne fournissent pas le même audit. Examiner les traces, la qualité, le début et la fin retenus, les doubles pics et les éventuelles anomalies.
 
 Résultat H1 consigné :
